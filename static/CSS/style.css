@@ -1,5 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px red solid !important;
+    visibility: visible !important; */
+}
+
+.header-centering {
+    padding-top: 100px;
+}
+
 .people {
-    background-color: green;
+    background-color: rgba(53, 104, 70, 0.685);
     height: 100vh;
 }
 
@@ -10,7 +22,7 @@
 
 .sizing {
     text-align: center;
-    height: 100vh;
+    height: 50vh;
     position: relative;
 }
 
@@ -37,7 +49,7 @@
 /* in order to get the image to be more transparent but not text */
 
 #act {
-    color: white;
+    text-decoration: underline;
 }
 
 .home-header {
@@ -50,6 +62,10 @@
 
 .nav-prop a {
     color: rgb(0, 0, 0);
+}
+
+.nav-prop a:hover {
+    color: red;
 }
 
 .nav-prop li {

@@ -1,13 +1,17 @@
 from flask import Flask, render_template, redirect, jsonify, request
 import gspread
-from app import app
 
-# def add_to_sheet()
+app = Flask(__name__)
 
+# app.config['TEMPLATES_AUTO_RELOAD'] = True
 
 @app.route('/')
 def entry():
     return redirect('/home')
+
+@app.route('/landing')
+def landing():
+    return render_template('landing.html')
 
 @app.route('/home')
 def home():
@@ -36,3 +40,6 @@ def rsvp():
 @app.route('/registry')
 def registry():
     return render_template('registry.html')
+
+if __name__ == "__main__":
+    app.run(debug=True)
