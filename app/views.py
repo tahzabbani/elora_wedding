@@ -1,5 +1,9 @@
 from flask import Flask, render_template, redirect, jsonify, request
+import gspread
 from app import app
+
+# def add_to_sheet()
+
 
 @app.route('/')
 def entry():
@@ -14,17 +18,21 @@ def nikkah():
     return render_template('nikkah.html')
 
 @app.route('/mehndi')
-def nikkah():
+def mehndi():
     return render_template('mehndi.html')
 
 @app.route('/reception')
-def nikkah():
+def reception():
     return render_template('reception.html')
 
+@app.route('/accomodations')
+def accomodations():
+    return render_template('accomodations.html')
+
 @app.route('/rsvp')
-def nikkah():
+def rsvp():
     return render_template('rsvp.html')
 
 @app.route('/registry')
-def nikkah():
+def registry():
     return render_template('registry.html')

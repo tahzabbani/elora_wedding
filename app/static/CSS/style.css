@@ -1,0 +1,57 @@
+.people {
+    background-color: green;
+    height: 100vh;
+}
+
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.sizing {
+    text-align: center;
+    height: 100vh;
+    position: relative;
+}
+
+.navbar {
+    z-index: 10;
+}
+
+.navbar-brand {
+    color: black;
+}
+
+.navbar-toggler {
+    border-color: black;
+}
+
+
+/* custom toggler */
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='	rgb(0,0,0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+/* in order to get the image to be more transparent but not text */
+
+#act {
+    color: white;
+}
+
+.home-header {
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 200px;
+    color: black;
+}
+
+.nav-prop a {
+    color: rgb(0, 0, 0);
+}
+
+.nav-prop li {
+    padding-left: 30px;
+}
