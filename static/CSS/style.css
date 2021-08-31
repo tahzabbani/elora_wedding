@@ -6,6 +6,10 @@
     visibility: visible !important; */
 }
 
+.text-center {
+    text-align: center;
+}
+
 .header-centering {
     padding-top: 100px;
 }
