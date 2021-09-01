@@ -17,9 +17,9 @@
 
 <body>
     <header>
-        <nav class="navbar fixed-top navbar-expand-md">
+        <nav class="navbar fixed-top navbar-expand-md navbar-light bg-white navbar-light bg-white">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">FKERWEDDING</a>
+                <a class="navbar-brand" href="index.html">khanwedding</a>
                 <button type="button" class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#myNavbar">
                         <span class="navbar-toggler-icon"></span>                      
                     </button>
@@ -31,7 +31,7 @@
                         <li class="nav-item"><a class="nav-link" href="reception">Reception</a></li>
                         <li class="nav-item"><a class="nav-link" href="accomodations">Accomodations</a></li>
                         <li class="nav-item"><a class="nav-link" href="registry">Registry</a></li>
-                        <li class="nav-item"><a class="nav-link" id="act" href="rsvp">RSVP</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="rsvp">RSVP</a></li>
                     </ul>
                 </div>
 
@@ -52,26 +52,41 @@
                 <div class="col-md-4 form-group text-center">
                     <h4>first thing's first...</h4>
                     <p>are you fully vaccinated? <br> (or will be at least two weeks prior to the events)</p>
-                    <div class="form-check form-check-inline">
-                        <label class="form-check-label" for="yes-vac">
+                    <div class="btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-outline-primary" for="yes-vac">
                           <input type="radio" class="form-check-input" id="yes-vac" name="vac" value="yes">yes
                         </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <label class="form-check-label" for="no-vac">
+                        <label class="btn btn-outline-danger" for="no-vac">
                           <input type="radio" class="form-check-input" id="no-vac" name="vac" value="no">no
                         </label>
-                      </div>
+                    </div>
                 </div>
             </div>
-            <div class="form-row text-center">
-                <div class="col-sm-3 offset-sm-3 form-group">
-                    <input type="text" class="form-control" id="fname" name="fname" placeholder="First name"><br>
+            <div class="appearing-form-wrap">
+                <div class="form-row justify-content-center">
+                    <div class="col-sm-2 form-group">
+                        <label for="fname">Name</label>
+                        <input type="text" class="form-control" id="fname" name="fname" placeholder="First name"><br>
+                    </div>
+                    <div class="col-sm-2 form-group">
+                        <label for="lname" style="visibility: hidden;">Name</label>
+                        <input type="text" class="form-control" id="lname" name="lname" placeholder="Last name"><br>
+                    </div>
                 </div>
-                <div class="col-sm-3 form-group">
-                    <input type="text" class="form-control" id="lname" name="lname" placeholder="Last name"><br>
+                <div class="form-row justify-content-center">
+                    <div class="col-sm-4">
+                        <label for="other-names">Names of others in your party 
+                            <p class="inner-label">Please separate full names with commas.</p></label>
+                        <input type="text" class="form-control" id="other-names" name="other-names"><br>
+                    </div>
                 </div>
-            </div>
+                <div class="form-row justify-content-center">
+                    <div class="col-sm-4">
+                        <label for="email">Email</label>
+                        <input type="text" class="form-control" id="email" name="email" placeholder="Email address"><br>
+                    </div>
+                </div>
+            </div>  
         </form>
     </div>
     <script src="" async defer></script>

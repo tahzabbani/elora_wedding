@@ -12,6 +12,10 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+.active {
+    text-decoration: underline;
+}
+
 .text-center {
     text-align: center;
 }
@@ -58,10 +62,6 @@ body {
 
 /* in order to get the image to be more transparent but not text */
 
-#act {
-    text-decoration: underline;
-}
-
 .home-header {
     font-size: 50px;
     font-weight: bolder;
@@ -80,4 +80,12 @@ body {
 
 .nav-prop li {
     padding-left: 30px;
+}
+
+/* rsvp */
+
+.inner-label {
+    opacity: 0.7;
+    font-size: 10px;
+    margin-bottom: 0;
 }
