@@ -41,5 +41,16 @@ def rsvp():
 def registry():
     return render_template('registry.html')
 
+@app.route('/rsvp-form', methods=["POST"])
+def form():
+    if request.method == "POST":
+    
+        req = request.form
+        print(req)
+
+        return redirect('rsvp')
+    return 0
+
+
 if __name__ == "__main__":
     app.run(debug=True)

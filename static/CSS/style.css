@@ -7,6 +7,10 @@
     visibility: visible !important; */
 }
 
+p {
+    margin-bottom: 0;
+}
+
 body {
     font-family: 'Raleway', sans-serif;
 }
@@ -97,4 +101,14 @@ label {
 .required-field {
     color: red;
     font-size: 30px;
+}
+
+.sbmt-btn {
+    border: rgb(0, 0, 0) 2px solid;
+    cursor: pointer;
+}
+
+.sbmt-btn:hover {
+    transition: background-color 1s ease;
+    background-color: white;
 }
