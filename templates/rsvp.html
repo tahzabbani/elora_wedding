@@ -50,7 +50,7 @@
         <form class="rsvp-form-wrapper py-5">
             <div class="form-row justify-content-center">
                 <div class="col-md-4 form-group text-center">
-                    <h4>first thing's first...</h4>
+                    <h2>first thing's first...</h2>
                     <p>are you fully vaccinated? <br> (or will be at least two weeks prior to the events)</p>
                     <div class="btn-group-toggle" data-toggle="buttons">
                         <label class="btn btn-outline-primary" for="yes-vac">
@@ -64,13 +64,14 @@
             </div>
             <div class="appearing-form-wrap">
                 <div class="form-row justify-content-center">
+                    <!-- TODO: mobile has weird gap between names because of form group -->
                     <div class="col-sm-2 form-group">
-                        <label for="fname">Name</label>
-                        <input type="text" class="form-control" id="fname" name="fname" placeholder="First name"><br>
+                        <label for="fname">Name<span class="required-field">*</span></label>
+                        <input type="text" class="form-control" id="fname" name="fname" placeholder="First name" required><br>
                     </div>
                     <div class="col-sm-2 form-group">
-                        <label for="lname" style="visibility: hidden;">Name</label>
-                        <input type="text" class="form-control" id="lname" name="lname" placeholder="Last name"><br>
+                        <label for="lname" style="visibility: hidden;">Name<span class="required-field">*</span></label>
+                        <input type="text" class="form-control" id="lname" name="lname" placeholder="Last name" required><br>
                     </div>
                 </div>
                 <div class="form-row justify-content-center">
@@ -86,7 +87,22 @@
                         <input type="text" class="form-control" id="email" name="email" placeholder="Email address"><br>
                     </div>
                 </div>
-            </div>  
+                <div class="form-row justify-content-center">
+                    <div class="col-sm-4" name="nikkah-rsvp">
+                        <p style="margin-bottom: 2px;">Nikkah</p>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                             <input type="radio" class="form-check-input" name="optradio">Option 1
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optradio">Option 2
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </form>
     </div>
     <script src="" async defer></script>
