@@ -1,9 +1,47 @@
-from flask import Flask, render_template, redirect, jsonify, request
+from flask import Flask, render_template, redirect, jsonify, request, flash
+from flask.helpers import url_for
 import gspread
 
 app = Flask(__name__)
 
 app.config['TEMPLATES_AUTO_RELOAD'] = True
+app.config['SECRET_KEY'] = "f3cfe9ed8fae309f02079dbf"
+
+# sheets init
+gc = gspread.service_account("credentials.json")
+sh = gc.open("FKER RSVP")
+worksheet = sh.get_worksheet(0)
+
+def get_next_avail_row():
+    row_number = len(worksheet.col_values(1)) + 1
+    return row_number
+
+# def fill_row():
+
+
+# TODO:
+# make bool function for adding to sheets
+# then if it returns true then display a new html page with success
+# if it fails then put some error message
+@app.route('/rsvp-form', methods=["POST"])
+def form():
+    if request.method == "POST":
+        req = request.form
+        fname = req["fname"]
+        lname = req["lname"]
+        other_people = req["other-names"]
+        email = req["email"]
+        nikkah = req["nikkah-choice"]
+        mehndi = req["mehndi-choice"]
+        reception = req["recep-choice"]
+        if (fill_row()):
+            render_template('success.html')
+        else:
+            flash("failed")
+            return redirect('/rsvp')
+        flash("congrats")
+ 
+    return "yay"
 
 @app.route('/')
 def entry():
@@ -41,16 +79,9 @@ def rsvp():
 def registry():
     return render_template('registry.html')
 
-@app.route('/rsvp-form', methods=["POST"])
-def form():
-    if request.method == "POST":
-    
-        req = request.form
-        print(req)
 
-        return redirect('rsvp')
-    return 0
 
+get_next_avail_row()
 
 if __name__ == "__main__":
     app.run(debug=True)
