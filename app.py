@@ -36,14 +36,8 @@ def fill_row(dict_vals):
 def form():
     if request.method == "POST":
         req = request.form
-        # fname = req["fname"]
-        # lname = req["lname"]
-        # other_people = req["other-names"]
-        # email = req["email"]
-        # nikkah = req["nikkah-choice"]
-        # mehndi = req["mehndi-choice"]
-        # reception = req["recep-choice"]
-
+        
+        # getting converted to list because of generator error
         if (fill_row(list(req.values()))):
             flash("congrats")
             return redirect('/rsvp')
