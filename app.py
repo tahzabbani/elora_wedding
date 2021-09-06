@@ -1,6 +1,7 @@
 from flask import Flask, render_template, redirect, jsonify, request, flash
 from flask.helpers import url_for
 import gspread
+import string
 
 app = Flask(__name__)
 
@@ -16,8 +17,16 @@ def get_next_avail_row():
     row_number = len(worksheet.col_values(1)) + 1
     return row_number
 
-# def fill_row():
-
+def fill_row(dict_vals):
+    filled = False
+    avail_row = get_next_avail_row()
+    for idx, i in enumerate(string.ascii_uppercase):
+        worksheet.update((i + "{}").format(avail_row), dict_vals[idx])
+        print(idx)
+        if ((idx + 1) == len(dict_vals)):
+            filled = True
+            break
+    return filled
 
 # TODO:
 # make bool function for adding to sheets
@@ -27,19 +36,20 @@ def get_next_avail_row():
 def form():
     if request.method == "POST":
         req = request.form
-        fname = req["fname"]
-        lname = req["lname"]
-        other_people = req["other-names"]
-        email = req["email"]
-        nikkah = req["nikkah-choice"]
-        mehndi = req["mehndi-choice"]
-        reception = req["recep-choice"]
-        if (fill_row()):
-            render_template('success.html')
-        else:
-            flash("failed")
+        # fname = req["fname"]
+        # lname = req["lname"]
+        # other_people = req["other-names"]
+        # email = req["email"]
+        # nikkah = req["nikkah-choice"]
+        # mehndi = req["mehndi-choice"]
+        # reception = req["recep-choice"]
+
+        if (fill_row(list(req.values()))):
+            flash("congrats")
             return redirect('/rsvp')
-        flash("congrats")
+        else:
+            flash("sorry")
+            return redirect('/rsvp')
  
     return "yay"
 
@@ -67,9 +77,9 @@ def mehndi():
 def reception():
     return render_template('reception.html')
 
-@app.route('/accomodations')
-def accomodations():
-    return render_template('accomodations.html')
+@app.route('/accommodations')
+def accommodations():
+    return render_template('accommodations.html')
 
 @app.route('/rsvp')
 def rsvp():
