@@ -6,6 +6,8 @@ import string
 app = Flask(__name__)
 
 app.config['TEMPLATES_AUTO_RELOAD'] = True
+# forgot what this was for? and need to 
+# see how to set this outside of this file
 app.config['SECRET_KEY'] = "f3cfe9ed8fae309f02079dbf"
 
 # sheets init
