@@ -38,7 +38,6 @@ def fill_row(dict_vals):
 def form():
     if request.method == "POST":
         req = request.form
-        
         # getting converted to list because of generator error
         if (fill_row(list(req.values()))):
             flash("congrats")
