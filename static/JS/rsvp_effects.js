@@ -1,1 +1,17 @@
-$(".appearing-form-wrap").css({ "display": "none" });
+$(".yes-vac").click(function() {
+    $("#reason-ta").removeAttr("required");
+    $(".vac-reasoning").css({ "display": "none" })
+    $(".appearing-form-wrap").css({ "display": "block" });
+    $('html,body').animate({
+        scrollTop: $("#scroll-yes").offset().top - 60
+    });
+})
+
+$(".no-vac").click(function() {
+    $("#reason-ta").prop("required", true);
+    $(".vac-reasoning").css({ "display": "block" })
+    $(".appearing-form-wrap").css({ "display": "block" });
+    $('html,body').animate({
+        scrollTop: $("#scroll-no").offset().top - 60
+    });
+})

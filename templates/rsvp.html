@@ -25,13 +25,13 @@
                     </button>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav ml-auto nav-prop">
-                        <li class="nav-item"><a class="nav-link" href="home">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="nikkah">Nikkah</a></li>
-                        <li class="nav-item"><a class="nav-link" href="mehndi">Mehndi</a></li>
-                        <li class="nav-item"><a class="nav-link" href="reception">Reception</a></li>
+                        <li class="nav-item"><a class="nav-link" href="home">home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nikkah">nikkah</a></li>
+                        <li class="nav-item"><a class="nav-link" href="mehndi">mehndi</a></li>
+                        <li class="nav-item"><a class="nav-link" href="reception">reception</a></li>
                         <li class="nav-item"><a class="nav-link" href="accommodations">accommodations</a></li>
-                        <li class="nav-item"><a class="nav-link" href="registry">Registry</a></li>
-                        <li class="nav-item active"><a class="nav-link" href="rsvp">RSVP</a></li>
+                        <li class="nav-item"><a class="nav-link" href="registry">registry</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="rsvp">rsvp</a></li>
                     </ul>
                 </div>
 
@@ -50,19 +50,27 @@
         <form class="rsvp-form-wrapper py-5" action="/rsvp-form" method="POST">
             <div class="form-row justify-content-center">
                 <div class="col-md-4 form-group text-center">
-                    <h2>first thing's first...</h2>
-                    <p style="margin-bottom: 1rem;">are you fully vaccinated? <br> (or will be at least two weeks prior to the events)</p>
+                    <h2>First thing's first...</h2>
+                    <p style="margin-bottom: 1rem;">Are you fully vaccinated? <br> (or will be at least two weeks prior to the events)</p>
                     <div class="btn-group-toggle" data-toggle="buttons">
-                        <label class="btn btn-outline-primary" for="yes-vac">
+                        <label class="btn btn-outline-primary yes-vac" for="yes-vac">
                           <input type="radio" class="form-check-input" id="yes-vac" name="vac" value="yes" required>yes
                         </label>
-                        <label class="btn btn-outline-danger" for="no-vac">
+                        <label class="btn btn-outline-danger no-vac" for="no-vac">
                           <input type="radio" class="form-check-input" id="no-vac" name="vac" value="no" required>no
                         </label>
                     </div>
                 </div>
             </div>
-            <div class="appearing-form-wrap">
+            <div class="vac-reasoning" id="scroll-no">
+                <div class="form-row justify-content-center">
+                    <div class="col-sm-4 form-group">
+                        <label for="reason-ta">Why aren't you vaccinated?<span class="required-field">*</span></label>
+                        <textarea class="form-control" id="reason-ta" required></textarea>
+                    </div>  
+                </div>
+            </div>
+            <div class="appearing-form-wrap" id="scroll-yes">
                 <div class="form-row justify-content-center">
                     <!-- TODO: mobile has weird gap between names because of form group -->
                     <div class="col-sm-2 form-group">
@@ -83,14 +91,14 @@
                 </div>
                 <div class="form-row justify-content-center">
                     <div class="col-sm-4">
-                        <label for="email">Email</label>
+                        <label for="email">Email<span class="required-field">*</span></label>
                         <input type="text" class="form-control" id="email" name="email" placeholder="Email address"><br>
                     </div>
                 </div>
                 <div class="form-row justify-content-center py-3">
                     <div class="col-sm-4">
                         <div style="padding-bottom: 2px;">
-                            <p>Nikkah</p>
+                            <p style="display: inline;">Nikkah</p><span class="required-field">*</span>
                             <p style="opacity: 0.7; font-size: 10px;">This date at this time</p>
                         </div>
                         <div class="form-check">
@@ -108,7 +116,7 @@
                 <div class="form-row justify-content-center py-3">
                     <div class="col-sm-4">
                         <div style="padding-bottom: 2px;">
-                            <p>Mehndi</p>
+                            <p style="display: inline;">Mehndi</p><span class="required-field">*</span>
                             <p style="opacity: 0.7; font-size: 10px;">This date at this time</p>
                         </div>
                         <div class="form-check">
@@ -126,7 +134,7 @@
                 <div class="form-row justify-content-center py-3">
                     <div class="col-sm-4">
                         <div style="padding-bottom: 2px;">
-                            <p>Reception</p>
+                            <p style="display: inline;">Reception</p><span class="required-field">*</span>
                             <p style="opacity: 0.7; font-size: 10px;">This date at this time</p>
                         </div>
                         <div class="form-check">
@@ -140,6 +148,12 @@
                             </label>
                         </div>
                     </div>
+                </div>
+                <div class="form-row justify-content-center py-3">
+                    <div class="col-sm-4 form-group">
+                        <label for="comments">Comments and Questions</label>
+                        <textarea class="form-control" id="comments"></textarea>
+                    </div>  
                 </div>
                 <div class="form-row justify-content-center">
                     <input type="submit" class="btn sbmt-btn">

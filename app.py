@@ -41,7 +41,7 @@ def form():
         # getting converted to list because of generator error
         if (fill_row(list(req.values()))):
             flash("congrats")
-            return redirect('/rsvp')
+            return redirect('/success')
         else:
             flash("sorry")
             return redirect('/rsvp')
@@ -52,9 +52,9 @@ def form():
 def entry():
     return redirect('/home')
 
-@app.route('/landing')
-def landing():
-    return render_template('landing.html')
+@app.route('/success')
+def success():
+    return render_template('success.html')
 
 @app.route('/home')
 def home():
