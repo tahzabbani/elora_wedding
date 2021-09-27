@@ -47,7 +47,7 @@
         </div>
     </div>
     <div class="container-fluid people">
-        <form class="rsvp-form-wrapper py-5" action="/rsvp-form" method="POST">
+        <form class="rsvp-form-wrapper py-5" id="main-form" action="/rsvp-form" method="POST">
             <div class="form-row justify-content-center">
                 <div class="col-md-4 form-group text-center">
                     <h2>First thing's first...</h2>
@@ -66,8 +66,9 @@
                 <div class="form-row justify-content-center">
                     <div class="col-sm-4 form-group">
                         <label for="reason-ta">Why aren't you vaccinated?<span class="required-field">*</span></label>
-                        <textarea class="form-control" id="reason-ta" required></textarea>
-                    </div>  
+                        <textarea class="form-control" id="reason-ta" name="reason-ta" required></textarea>
+                        <!-- <input type="text" class="form-control" id="reason-ta" name="reason=ta" -->
+                    </div>
                 </div>
             </div>
             <div class="appearing-form-wrap" id="scroll-yes">
@@ -152,8 +153,8 @@
                 <div class="form-row justify-content-center py-3">
                     <div class="col-sm-4 form-group">
                         <label for="comments">Comments and Questions</label>
-                        <textarea class="form-control" id="comments"></textarea>
-                    </div>  
+                        <textarea class="form-control" id="comments" name="comments"></textarea>
+                    </div>
                 </div>
                 <div class="form-row justify-content-center">
                     <input type="submit" class="btn sbmt-btn">
