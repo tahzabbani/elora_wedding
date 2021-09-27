@@ -15,19 +15,29 @@ gc = gspread.service_account("credentials.json")
 sh = gc.open("FKER RSVP")
 worksheet = sh.get_worksheet(0)
 
+# the values were being filled in random 
+# cells in the server, so this is the solution
+spread_dict = {"vac":"A", "reason-ta":"B", "fname":"C", "lname":"D", "other-names":"E", "email":"F", "mehndi-choice":"G", "recep-choice":"H", "comments":"I"}
+
 def get_next_avail_row():
     row_number = len(worksheet.col_values(1)) + 1
     return row_number
 
-def fill_row(dict_vals):
+def get_column(key):
+    return spread_dict[key]
+
+def fill_row(dict_form):
     filled = False
     avail_row = get_next_avail_row()
-    for idx, i in enumerate(string.ascii_uppercase):
-        worksheet.update((i + "{}").format(avail_row), dict_vals[idx])
-        print(idx)
-        if ((idx + 1) == len(dict_vals)):
+    for key in dict_form.keys():
+        if (worksheet.update((get_column(key) + "{}").format(avail_row), dict_form[key])):
+        # for idx, i in enumerate(string.ascii_uppercase):
+    #     worksheet.update((i + "{}").format(avail_row), dict_vals[idx])
+    #     print(idx)
+    #     if ((idx + 1) == len(dict_vals)):
+    #         filled = True
+    #         break
             filled = True
-            break
     return filled
 
 # TODO:
@@ -40,7 +50,7 @@ def form():
         req = request.form
         print(req)
         # getting converted to list because of generator error
-        if (fill_row(list(req.values()))):
+        if (fill_row(req)):
             flash("congrats")
             return redirect('/success')
         else:

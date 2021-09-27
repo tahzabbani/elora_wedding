@@ -1,3 +1,7 @@
 __pycache__
 credentials.json
 /env
+wsgi.pyc
+app.pyc
+app.ini
+config.py
