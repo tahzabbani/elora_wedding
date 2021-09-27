@@ -90,4 +90,5 @@ def registry():
 get_next_avail_row()
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.debug = True
+    app.run(host='0.0.0.0')
