@@ -5,3 +5,4 @@ wsgi.pyc
 app.pyc
 app.ini
 config.py
+application.log
