@@ -2,7 +2,9 @@ from flask import Flask, render_template, redirect, jsonify, request, flash
 from flask.helpers import url_for
 import gspread
 import string
+import logging
 
+logging.basicConfig(filename='application.log', level=logging.INFO)
 app = Flask(__name__)
 
 app.config['TEMPLATES_AUTO_RELOAD'] = True
@@ -48,7 +50,7 @@ def fill_row(dict_form):
 def form():
     if request.method == "POST":
         req = request.form
-        print(req)
+        logging.info(req)
         # getting converted to list because of generator error
         if (fill_row(req)):
             flash("congrats")

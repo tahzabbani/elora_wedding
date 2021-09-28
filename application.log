@@ -1,0 +1,36 @@
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.86.27:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-187-650
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 10:39:46] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 10:39:46] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 10:39:47] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 10:39:48] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 10:39:48] "[36mGET /static/JS/rsvp_effects.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 10:39:50] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 10:39:50] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 10:39:50] "[36mGET /static/JS/rsvp_effects.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 10:40:07] "[32mPOST /rsvp-form HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 10:40:07] "GET /success HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 10:40:07] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/mnt/c/Users/toosh/Documents/code/elora_wedding/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-187-650
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.86.27:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-187-650
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 10:41:28] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 10:41:28] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 10:41:30] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 10:41:30] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 10:41:30] "[36mGET /static/JS/rsvp_effects.js HTTP/1.1[0m" 304 -
+INFO:root:ImmutableMultiDict([('vac', 'no'), ('reason-ta', 'why nmot'), ('fname', 'tahse'), ('lname', 'robba'), ('other-names', 'others'), ('email', 'email'), ('mehndi-choice', 'yes'), ('recep-choice', 'yes'), ('comments', 'comments')])
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 10:41:45] "[32mPOST /rsvp-form HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 10:41:45] "GET /success HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 10:41:45] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
