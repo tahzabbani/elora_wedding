@@ -34,3 +34,182 @@ INFO:root:ImmutableMultiDict([('vac', 'no'), ('reason-ta', 'why nmot'), ('fname'
 INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 10:41:45] "[32mPOST /rsvp-form HTTP/1.1[0m" 302 -
 INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 10:41:45] "GET /success HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 10:41:45] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.86.27:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-187-650
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:04:36] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:04:36] "GET /static/CSS/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:04:39] "GET /nikkah HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:04:39] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:04:39] "GET /static/JS/soundcloudfx.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:04:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.86.27:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-187-650
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:05:51] "GET /nikkah HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:05:51] "GET /nikkah HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:05:51] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:05:51] "[36mGET /static/JS/soundcloudfx.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:05:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:05:54] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:06:17] "GET /nikkah HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:06:18] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:06:18] "[36mGET /static/JS/soundcloudfx.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:06:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:06:49] "GET /nikkah HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:06:49] "GET /static/CSS/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:06:49] "[36mGET /static/JS/soundcloudfx.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:06:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:07:08] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:08:09] "GET /nikkah HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:08:10] "GET /static/CSS/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:08:10] "[36mGET /static/JS/soundcloudfx.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:08:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:13:30] "GET /nikkah HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:13:30] "GET /static/CSS/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:13:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:14:00] "GET /nikkah HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:14:00] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:15:31] "GET /nikkah HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:15:31] "GET /static/CSS/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:15:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:16:46] "GET /nikkah HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:16:47] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:16:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:17:00] "GET /nikkah HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:17:00] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:17:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:17:52] "GET /nikkah HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:17:52] "GET /static/CSS/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:17:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:18:10] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:19:32] "GET /nikkah HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:19:32] "GET /static/CSS/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:19:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:20:32] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:20:32] "GET /static/CSS/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:20:33] "GET /nikkah HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:20:34] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:20:34] "GET /mehndi HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:20:34] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:20:35] "GET /reception HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:20:36] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:20:37] "GET /accommodations HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:20:37] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:20:37] "GET /registry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:20:38] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:20:39] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:20:39] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:20:39] "[36mGET /static/JS/rsvp_effects.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:22:44] "GET /nikkah HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:22:44] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:22:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:26:02] "GET /nikkah HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:26:02] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:26:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:26:25] "GET /nikkah HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:26:25] "GET /static/CSS/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:26:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:26:33] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:27:08] "GET /nikkah HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:27:08] "GET /static/CSS/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:27:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:27:31] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:28:03] "GET /nikkah HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:28:03] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:28:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:30:57] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:34:42] "GET /nikkah HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:34:42] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:34:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:35:09] "GET /nikkah HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:35:09] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:35:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:35:14] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:36:45] "GET /nikkah HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:36:45] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:36:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:37:05] "GET /nikkah HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:37:06] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:37:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:37:30] "GET /nikkah HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:37:30] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:37:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:37:36] "GET /nikkah HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:37:36] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:37:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:37:56] "GET /nikkah HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:37:56] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:37:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:38:30] "GET /nikkah HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:38:30] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:38:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:38:36] "GET /nikkah HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:38:36] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:38:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:38:42] "GET /nikkah HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:38:43] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:38:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:40:41] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:40:41] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:40:41] "[36mGET /static/JS/rsvp_effects.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:40:59] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:42:21] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:42:21] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:42:21] "[36mGET /static/JS/rsvp_effects.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:42:30] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:42:30] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:42:31] "[36mGET /static/JS/rsvp_effects.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:42:48] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:45:08] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:45:08] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:45:08] "[36mGET /static/JS/rsvp_effects.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:45:30] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:45:30] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:45:30] "[36mGET /static/JS/rsvp_effects.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:46:17] "GET /nikkah HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:46:17] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:46:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.86.27:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-187-650
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:48:14] "GET /nikkah HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:48:14] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:48:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:48:15] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:48:15] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:48:16] "[36mGET /static/JS/rsvp_effects.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:48:53] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:50:10] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:50:10] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:50:10] "[36mGET /static/JS/rsvp_effects.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:50:49] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:50:49] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:50:49] "[36mGET /static/JS/rsvp_effects.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:51:18] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:51:18] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:51:18] "[36mGET /static/JS/rsvp_effects.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:56:06] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:56:06] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:56:06] "[36mGET /static/JS/rsvp_effects.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:56:25] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:56:25] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:56:26] "[36mGET /static/JS/rsvp_effects.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:57:59] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:57:59] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:57:59] "[36mGET /static/JS/rsvp_effects.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:59:19] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:59:19] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:59:19] "[36mGET /static/JS/rsvp_effects.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 18:00:02] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 18:00:02] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 18:00:03] "[36mGET /static/JS/rsvp_effects.js HTTP/1.1[0m" 304 -

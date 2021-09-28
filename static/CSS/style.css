@@ -136,3 +136,18 @@ label {
 .success-el {
     margin-top: 250px;
 }
+
+.google-maps {
+    overflow: hidden;
+    padding-bottom: 50%;
+    position: relative;
+    height: 0;
+}
+
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}

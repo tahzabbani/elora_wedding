@@ -34,12 +34,6 @@ def fill_row(dict_form):
     for key in dict_form.keys():
         if (worksheet.update((get_column(key) + "{}").format(avail_row), dict_form[key])):
             logging.info("here is the lertter:" + str(get_column(key)) + " and value:" + dict_form[key])
-        # for idx, i in enumerate(string.ascii_uppercase):
-    #     worksheet.update((i + "{}").format(avail_row), dict_vals[idx])
-    #     print(idx)
-    #     if ((idx + 1) == len(dict_vals)):
-    #         filled = True
-    #         break
             filled = True
     return filled
 
