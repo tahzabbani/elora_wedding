@@ -213,3 +213,21 @@ INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 17:59:19] "[36mGET /static/JS/rsvp_eff
 INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 18:00:02] "GET /rsvp HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 18:00:02] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
 INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 18:00:03] "[36mGET /static/JS/rsvp_effects.js HTTP/1.1[0m" 304 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.86.27:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-187-650
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 18:04:59] "GET /nikkah HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 18:04:59] "[36mGET /static/CSS/style.css HTTP/1.1[0m" 304 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.86.27:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-187-650
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 18:21:57] "GET /nikkah HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 18:21:57] "GET /static/CSS/style.css?q=1632870994 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 18:21:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Sep/2021 18:21:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -

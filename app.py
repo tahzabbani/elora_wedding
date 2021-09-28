@@ -3,6 +3,7 @@ from flask.helpers import url_for
 import gspread
 import string
 import logging
+import os
 
 logging.basicConfig(filename='application.log', level=logging.INFO)
 app = Flask(__name__)
@@ -20,6 +21,19 @@ worksheet = sh.get_worksheet(0)
 # the values were being filled in random 
 # cells in the server, so this is the solution
 spread_dict = {"vac":"A", "reason-ta":"B", "fname":"C", "lname":"D", "other-names":"E", "email":"F", "mehndi-choice":"G", "recep-choice":"H", "comments":"I"}
+
+@app.context_processor
+def override_url_for():
+    return dict(url_for=dated_url_for)
+
+def dated_url_for(endpoint, **values):
+    if endpoint == 'static':
+        filename = values.get('filename', None)
+        if filename:
+            file_path = os.path.join(app.root_path,
+                                 endpoint, filename)
+            values['q'] = int(os.stat(file_path).st_mtime)
+    return url_for(endpoint, **values)
 
 def get_next_avail_row():
     row_number = len(worksheet.col_values(1)) + 1
