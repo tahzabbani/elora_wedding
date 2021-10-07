@@ -87,17 +87,9 @@ def success():
 def home():
     return render_template('home.html')
 
-@app.route('/nikkah')
+@app.route('/events')
 def nikkah():
-    return render_template('nikkah.html')
-
-@app.route('/mehndi')
-def mehndi():
-    return render_template('mehndi.html')
-
-@app.route('/reception')
-def reception():
-    return render_template('reception.html')
+    return render_template('events.html')
 
 @app.route('/accommodations')
 def accommodations():
