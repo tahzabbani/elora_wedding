@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +14,7 @@ html {
 
 p {
     margin-bottom: 0;
+    font-weight: 200;
 }
 
 body {
@@ -28,7 +30,7 @@ body {
 }
 
 .header-centering {
-    padding-top: 100px;
+    padding-top: 30vh;
 }
 
 .people {
@@ -68,14 +70,12 @@ body {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='	rgb(0,0,0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-
-/* in order to get the image to be more transparent but not text */
-
 .home-header {
-    font-size: 50px;
+    font-size: 60px;
+    font-weight: 600;
     text-align: center;
     margin-top: 200px;
-    color: black;
+    color: white;
 }
 
 .nav-prop a {

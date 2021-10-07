@@ -20,8 +20,12 @@ worksheet = sh.get_worksheet(0)
 
 # the values were being filled in random 
 # cells in the server, so this is the solution
-spread_dict = {"vac":"A", "reason-ta":"B", "fname":"C", "lname":"D", "other-names":"E", "email":"F", "mehndi-choice":"G", "recep-choice":"H", "comments":"I"}
+spread_dict = {"vac":"A", "reason-ta":"B", "fname":"C", "lname":"D", "other-names":"E", "email":"F", "mehndi-choice":"G", "recep-choice":"H", "fast-food":"I", "comments":"J"}
 
+
+# this is for making sure the style updates every time
+# that there's a reload, it adds a timestamp to the style.css
+#########################
 @app.context_processor
 def override_url_for():
     return dict(url_for=dated_url_for)
@@ -34,6 +38,7 @@ def dated_url_for(endpoint, **values):
                                  endpoint, filename)
             values['q'] = int(os.stat(file_path).st_mtime)
     return url_for(endpoint, **values)
+#########################
 
 def get_next_avail_row():
     row_number = len(worksheet.col_values(1)) + 1
@@ -47,7 +52,7 @@ def fill_row(dict_form):
     avail_row = get_next_avail_row()
     for key in dict_form.keys():
         if (worksheet.update((get_column(key) + "{}").format(avail_row), dict_form[key])):
-            logging.info("here is the lertter:" + str(get_column(key)) + " and value:" + dict_form[key])
+            logging.info("here is the letter:" + str(get_column(key)) + " and value:" + dict_form[key])
             filled = True
     return filled
 

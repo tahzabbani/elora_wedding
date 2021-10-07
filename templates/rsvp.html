@@ -42,7 +42,7 @@
     <div class="container-fluid sizing">
         <div class="row header-centering">
             <div class="col-sm">
-                <span class="home-header">yeah yeah yeah <br> nice</span>
+                <span class="home-header">yeah yeah yeah</span>
             </div>
         </div>
     </div>
@@ -50,7 +50,7 @@
         <form class="rsvp-form-wrapper py-5" id="main-form" action="/rsvp-form" method="POST">
             <div class="form-row justify-content-center">
                 <div class="col-md-4 form-group text-center">
-                    <h2>First thing's first...</h2>
+                    <h2>First Thing's First...</h2>
                     <p style="margin-bottom: 1rem;">Are you fully vaccinated? <br> (or will be at least two weeks prior to the events)</p>
                     <div class="btn-group-toggle" data-toggle="buttons">
                         <label class="btn btn-outline-primary yes-vac" for="yes-vac">
@@ -130,6 +130,13 @@
                             <input type="radio" class="form-check-input radio-choice-btn" name="recep-choice" value="no" required>no
                             </label>
                         </div>
+                    </div>
+                </div>
+                <div class="form-row justify-content-center pt-3">
+                    <div class="col-sm-4 mx-3 mx-sm-0">
+                        <label for="fast-food">What's your favorite fast food restaurant?</label>
+                        <!-- <p class="inner-label">Please separate full names with commas.</p></label> -->
+                        <input type="text" class="form-control" id="fast-food" name="fast-food"><br>
                     </div>
                 </div>
                 <div class="form-row justify-content-center py-3">
