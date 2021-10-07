@@ -88,7 +88,7 @@ def home():
     return render_template('home.html')
 
 @app.route('/events')
-def nikkah():
+def events():
     return render_template('events.html')
 
 @app.route('/accommodations')
