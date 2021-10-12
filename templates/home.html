@@ -15,11 +15,11 @@
 
 </head>
 
-<body>
+<body class="">
     <header>
-        <nav class="navbar fixed-top navbar-expand-md navbar-light bg-white">
+        <nav class="navbar fixed-top navbar-expand-md">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">khanwedding</a>
+                <a class="navbar-brand" href="index.html">F & E</a>
                 <button type="button" class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#myNavbar">
                         <span class="navbar-toggler-icon"></span>                      
                     </button>
@@ -39,14 +39,18 @@
 
     <div class="container-fluid sizing">
         <div class="row header-centering">
-            <div class="col-sm">
-                <span class="home-header">FAHAD & ELORA</span>
+            <div class="col-sm text-center">
+                <!-- <span class="home-header">FAHAD & ELORA</span> -->
+                <img class="img-fluid title-img pic" style="height: 200px;" src="../static/images/lakyn_art/title.png"> <br>
+                <img class="img-fluid title-img pic" style="height: 100px;" src="../static/images/lakyn_art/location.png"> <br>
+                <img class="img-fluid elorafah-img pic pt-3" style="height: 100px;" src="../static/images/lakyn_art/date.png"> <br>
+                <img class="img-fluid elorafah-img pic" style="height: 300px;" src="../static/images/lakyn_art/elorafahad.png"> <br>
                 <p>website under construction</p>
             </div>
         </div>
     </div>
-    </div>
-    <script src="" async defer></script>
+    <script src="{{ url_for('static', filename='JS/navbar_effects.js') }}"></script>
+
 </body>
 
 </html>

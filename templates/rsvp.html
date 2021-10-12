@@ -17,9 +17,9 @@
 
 <body>
     <header>
-        <nav class="navbar fixed-top navbar-expand-md navbar-light bg-white navbar-light bg-white">
+        <nav class="navbar fixed-top navbar-expand-md">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">khanwedding</a>
+                <a class="navbar-brand" href="index.html">F & E</a>
                 <button type="button" class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#myNavbar">
                         <span class="navbar-toggler-icon"></span>                      
                     </button>
@@ -39,8 +39,10 @@
 
     <div class="container-fluid sizing">
         <div class="row header-centering">
-            <div class="col-sm">
-                <span class="home-header">rsvp still kind of being constructed</span>
+            <div class="col-sm text-center">
+                <!-- <span class="home-header">rsvp still kind of being constructed</span> -->
+                <h1 class="tab-header">rsvp</h1>
+                <img class="img-fluid" style="height: 750px;" src="../static/images/lakyn_art/rsvp.png">
             </div>
         </div>
     </div>
@@ -98,7 +100,7 @@
                     <div class="col-sm-4 mx-3 mx-sm-0">
                         <div style="padding-bottom: 2px;">
                             <p style="display: inline;">Mehndi</p><span class="required-field">*</span>
-                            <p style="opacity: 0.7; font-size: 10px;">This date at this time</p>
+                            <p class="inner-label" style="opacity: 0.7; font-size: 10px;">This date at this time</p>
                         </div>
                         <div class="form-check">
                             <label class="form-check-label radio-label">
@@ -116,7 +118,7 @@
                     <div class="col-sm-4 mx-3 mx-sm-0">
                         <div style="padding-bottom: 2px;">
                             <p style="display: inline;">Reception</p><span class="required-field">*</span>
-                            <p style="opacity: 0.7; font-size: 10px;">This date at this time</p>
+                            <p class="inner-label" style="opacity: 0.7; font-size: 10px;">This date at this time</p>
                         </div>
                         <div class="form-check">
                             <label class="form-check-label radio-label">
@@ -132,8 +134,9 @@
                 </div>
                 <div class="form-row justify-content-center pt-3">
                     <div class="col-sm-4 mx-3 mx-sm-0">
-                        <label for="fast-food">What's your favorite fast food restaurant?</label>
-                        <!-- <p class="inner-label">Please separate full names with commas.</p></label> -->
+                        <label for="fast-food">What's your favorite fast food restaurant?
+                        <p class="inner-label">This won't affect your RSVP, but we'll judge you.</p>
+                        </label>
                         <input type="text" class="form-control" id="fast-food" name="fast-food"><br>
                     </div>
                 </div>
@@ -150,7 +153,8 @@
         </form>
     </div>
     <!-- TODO: make this a url_for variable -->
-    <script src="../static/JS/rsvp_effects.js"></script>
+    <script src="{{ url_for('static', filename='JS/navbar_effects.js') }}"></script>
+    <script src="{{ url_for('static', filename='JS/rsvp_effects.js') }}"></script>
 </body>
 
 </html>

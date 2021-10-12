@@ -17,9 +17,9 @@
 
 <body>
     <header>
-        <nav class="navbar fixed-top navbar-expand-md navbar-light bg-white">
+        <nav class="navbar fixed-top navbar-expand-md">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">khanwedding</a>
+                <a class="navbar-brand" href="index.html">F & E</a>
                 <button type="button" class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#myNavbar">
                         <span class="navbar-toggler-icon"></span>                      
                     </button>
@@ -40,7 +40,8 @@
     <div class="container-fluid sizing">
         <div class="row header-centering">
             <div class="col-sm">
-                <span class="home-header">registry under construction :)</span>
+                <!-- <span class="home-header">registry under construction :)</span> -->
+                <img class="img-fluid" style="height: 400px;" src="../static/images/lakyn_art/reg.png">
             </div>
         </div>
     </div>
@@ -51,7 +52,8 @@
             </div>
         </div>
     </div>
-    <script src="" async defer></script>
+    <script src="{{ url_for('static', filename='JS/navbar_effects.js') }}"></script>
+
 </body>
 
 </html>

@@ -1,5 +1,6 @@
 from flask import Flask, render_template, redirect, jsonify, request, flash
 from flask.helpers import url_for
+import config
 import gspread
 import string
 import logging
@@ -9,9 +10,7 @@ logging.basicConfig(filename='application.log', level=logging.INFO)
 app = Flask(__name__)
 
 app.config['TEMPLATES_AUTO_RELOAD'] = True
-# forgot what this was for? and need to 
-# see how to set this outside of this file
-app.config['SECRET_KEY'] = "f3cfe9ed8fae309f02079dbf"
+app.config['SECRET_KEY'] = config.secret_key
 
 # sheets init
 gc = gspread.service_account("credentials.json")
@@ -23,8 +22,8 @@ worksheet = sh.get_worksheet(0)
 spread_dict = {"vac":"A", "reason-ta":"B", "fname":"C", "lname":"D", "other-names":"E", "email":"F", "mehndi-choice":"G", "recep-choice":"H", "fast-food":"I", "comments":"J"}
 
 
-# this is for making sure the style updates every time
-# that there's a reload, it adds a timestamp to the style.css
+# this is for making sure the static files update every time
+# that there's a reload, it adds a timestamp to the files
 #########################
 @app.context_processor
 def override_url_for():
