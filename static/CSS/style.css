@@ -6,8 +6,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* outline: 1px red solid !important;
-    visibility: visible !important; */
+    /* outline: 1px red solid !important; */
+    /* visibility: visible !important; */
+}
+
+html,
+body {
+    height: 100%;
 }
 
 html {
@@ -53,8 +58,8 @@ body {
 }
 
 .container-fluid {
-    /* padding-left: 0px;
-    padding-right: 0px; */
+    /* padding-left: 0px; */
+    /*padding-right: 0px; */
 }
 
 .sizing {
@@ -166,6 +171,30 @@ label {
 }
 
 
+/* lakyn pics */
+
+.big-pic {
+    height: 750px;
+}
+
+.title-img {
+    height: 200px;
+}
+
+.event-pic {
+    height: 150px;
+    margin-top: 200px;
+}
+
+.reg-pic {
+    height: 600px;
+}
+
+.acc-pic {
+    height: 600px;
+}
+
+
 /* success */
 
 .success-el {
@@ -185,4 +214,28 @@ label {
     left: 0;
     width: 100% !important;
     height: 100% !important;
+}
+
+.content-spacing {
+    margin-top: 400px;
+    margin-bottom: 400px;
+}
+
+
+/* media queries */
+
+@media only screen and (max-width: 700px) {
+    .big-pic {
+        height: 350px;
+    }
+    .title-img {
+        height: 100px;
+    }
+    .event-pic {
+        height: 100px;
+    }
+    .reg-pic {
+        height: 375px;
+    }
+    .acc-pic {}
 }

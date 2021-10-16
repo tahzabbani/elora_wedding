@@ -70,13 +70,17 @@ def form():
             return redirect('/success')
         else:
             flash("sorry")
-            return redirect('/rsvp')
+            return redirect('/failure')
  
     return "yay"
 
 @app.route('/')
 def entry():
     return redirect('/home')
+
+@app.route('/failure')
+def failure():
+    return render_template('failure.html')
 
 @app.route('/success')
 def success():
