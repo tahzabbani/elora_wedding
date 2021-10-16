@@ -50,11 +50,13 @@ body {
 
 .header-centering {
     padding-top: 12.5vh;
+    background-color: #eec7be;
 }
 
 .people {
     /* background-color: rgba(53, 104, 70, 0.685); */
     background-color: #faefec;
+    position: relative;
     /* height: 100vh; */
 }
 
@@ -123,7 +125,7 @@ body {
 }
 
 .nav-prop a:hover {
-    color: white;
+    color: #e7a751;
 }
 
 .nav-prop li {
@@ -168,14 +170,14 @@ label {
 
 .sbmt-btn:hover {
     transition: background-color 1s ease;
-    background-color: green;
+    background-color: #e7a751;
 }
 
 
 /* lakyn pics */
 
 .big-pic {
-    height: 750px;
+    height: 600px;
 }
 
 .title-img {
@@ -192,7 +194,12 @@ label {
 }
 
 .acc-pic {
-    height: 600px;
+    height: 500px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 
@@ -210,6 +217,8 @@ label {
 }
 
 .google-maps iframe {
+    border-radius: 5%;
+    border-color: #340101;
     position: absolute;
     top: 0;
     left: 0;
