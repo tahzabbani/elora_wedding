@@ -26,6 +26,7 @@ p {
 body {
     font-family: 'Raleway', sans-serif;
     background-color: #eec7be;
+    word-wrap: break-word;
 }
 
 .tab-header {
@@ -237,5 +238,7 @@ label {
     .reg-pic {
         height: 375px;
     }
-    .acc-pic {}
+    .acc-pic {
+        height: 400px;
+    }
 }
