@@ -2801,3 +2801,98 @@ INFO:werkzeug:127.0.0.1 - - [21/Oct/2021 17:51:22] "[36mGET /static/CSS/style.c
 INFO:werkzeug:127.0.0.1 - - [21/Oct/2021 17:51:22] "GET /static/JS/rsvp_effects.js?q=1632094226 HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [21/Oct/2021 17:51:22] "[36mGET /static/JS/navbar_effects.js?q=1634001641 HTTP/1.1[0m" 304 -
 INFO:werkzeug:127.0.0.1 - - [21/Oct/2021 17:51:22] "GET /static/images/lakyn_art/rsvp.png HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:21:18] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:21:18] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:21:18] "GET /static/CSS/style.css?q=1634423916 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:21:18] "GET /static/images/lakyn_art/title.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:21:18] "GET /static/images/lakyn_art/date.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:21:18] "GET /static/images/lakyn_art/elorafahad.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:21:18] "GET /static/images/lakyn_art/location.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:21:18] "GET /static/JS/navbar_effects.js?q=1634001641 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:21:18] "[36mGET /static/CSS/style.css?q=1634423916 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:21:19] "GET /static/images/lakyn_art/rings.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:21:19] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:21:20] "[36mGET /static/CSS/style.css?q=1634423916 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:21:20] "GET /static/JS/rsvp_effects.js?q=1632094226 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:21:20] "[36mGET /static/JS/navbar_effects.js?q=1634001641 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:21:20] "GET /static/images/lakyn_art/rsvp.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:22:26] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:22:26] "[36mGET /static/CSS/style.css?q=1634423916 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:22:26] "[36mGET /static/JS/navbar_effects.js?q=1634001641 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:22:27] "[36mGET /static/JS/rsvp_effects.js?q=1632094226 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:22:27] "[36mGET /static/images/lakyn_art/rsvp.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:22:27] "[36mGET /static/images/lakyn_art/rings.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:26:17] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:26:18] "[36mGET /static/CSS/style.css?q=1634423916 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:26:18] "[36mGET /static/JS/navbar_effects.js?q=1634001641 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:26:18] "[36mGET /static/JS/rsvp_effects.js?q=1632094226 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:26:18] "[36mGET /static/images/lakyn_art/rsvp.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:26:18] "[36mGET /static/images/lakyn_art/rings.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:26:43] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:26:43] "[36mGET /static/CSS/style.css?q=1634423916 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:26:43] "[36mGET /static/JS/navbar_effects.js?q=1634001641 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:26:44] "[36mGET /static/JS/rsvp_effects.js?q=1632094226 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:26:44] "[36mGET /static/images/lakyn_art/rsvp.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:26:44] "[36mGET /static/images/lakyn_art/rings.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:26:59] "[36mGET /static/CSS/style.css?q=1634423916 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:28:32] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:28:32] "[36mGET /static/CSS/style.css?q=1634423916 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:28:32] "[36mGET /static/JS/navbar_effects.js?q=1634001641 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:28:32] "[36mGET /static/JS/rsvp_effects.js?q=1632094226 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:28:32] "[36mGET /static/images/lakyn_art/rsvp.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:28:33] "[36mGET /static/images/lakyn_art/rings.png HTTP/1.1[0m" 304 -
+INFO:root:ImmutableMultiDict([('vac', 'yes'), ('reason-ta', ''), ('fname', 'fe'), ('lname', 'fe'), ('other-names', 'someone'), ('email', 'tarobbani@gmail.com'), ('phone', '256-479-5800'), ('mehndi-choice', 'yes'), ('recep-choice', 'no'), ('fast-food', ''), ('comments', '')])
+INFO:root:here is the letter:A and value:yes
+INFO:root:here is the letter:B and value:
+INFO:root:here is the letter:C and value:fe
+INFO:root:here is the letter:D and value:fe
+INFO:root:here is the letter:E and value:someone
+INFO:root:here is the letter:F and value:tarobbani@gmail.com
+ERROR:app:Exception on /rsvp-form [POST]
+Traceback (most recent call last):
+  File "/mnt/c/Users/toosh/Documents/code/elora_wedding/env/lib/python3.8/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/mnt/c/Users/toosh/Documents/code/elora_wedding/env/lib/python3.8/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/mnt/c/Users/toosh/Documents/code/elora_wedding/env/lib/python3.8/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/mnt/c/Users/toosh/Documents/code/elora_wedding/env/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/mnt/c/Users/toosh/Documents/code/elora_wedding/app.py", line 68, in form
+    if (fill_row(req)):
+  File "/mnt/c/Users/toosh/Documents/code/elora_wedding/app.py", line 53, in fill_row
+    if (worksheet.update((get_column(key) + "{}").format(avail_row), dict_form[key])):
+  File "/mnt/c/Users/toosh/Documents/code/elora_wedding/app.py", line 47, in get_column
+    return spread_dict[key]
+KeyError: 'phone'
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:29:06] "[35m[1mPOST /rsvp-form HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:29:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:ImmutableMultiDict([('vac', 'yes'), ('reason-ta', ''), ('fname', 'fe'), ('lname', 'fe'), ('other-names', 'someone'), ('email', 'tarobbani@gmail.com'), ('phone', '256-479-5800'), ('mehndi-choice', 'yes'), ('recep-choice', 'no'), ('fast-food', ''), ('comments', '')])
+INFO:root:here is the letter:A and value:yes
+INFO:root:here is the letter:B and value:
+INFO:root:here is the letter:C and value:fe
+INFO:root:here is the letter:D and value:fe
+INFO:root:here is the letter:E and value:someone
+INFO:root:here is the letter:F and value:tarobbani@gmail.com
+INFO:root:here is the letter:G and value:256-479-5800
+INFO:root:here is the letter:H and value:yes
+INFO:root:here is the letter:I and value:no
+INFO:root:here is the letter:J and value:
+INFO:root:here is the letter:K and value:
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:29:43] "[32mPOST /rsvp-form HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:29:43] "GET /success HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:29:43] "[36mGET /static/CSS/style.css?q=1634423916 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:29:44] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:29:45] "[36mGET /static/CSS/style.css?q=1634423916 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:29:45] "[36mGET /static/JS/navbar_effects.js?q=1634001641 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:29:45] "[36mGET /static/images/lakyn_art/title.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:29:45] "[36mGET /static/images/lakyn_art/date.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:29:45] "[36mGET /static/images/lakyn_art/location.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:29:45] "[36mGET /static/images/lakyn_art/elorafahad.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:30:41] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:30:41] "[36mGET /static/CSS/style.css?q=1634423916 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:30:41] "[36mGET /static/JS/navbar_effects.js?q=1634001641 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:30:41] "[36mGET /static/JS/rsvp_effects.js?q=1632094226 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [07/Nov/2021 19:30:41] "[36mGET /static/images/lakyn_art/rsvp.png HTTP/1.1[0m" 304 -

@@ -19,7 +19,7 @@ worksheet = sh.get_worksheet(0)
 
 # the values were being filled in random 
 # cells in the server, so this is the solution
-spread_dict = {"vac":"A", "reason-ta":"B", "fname":"C", "lname":"D", "other-names":"E", "email":"F", "mehndi-choice":"G", "recep-choice":"H", "fast-food":"I", "comments":"J"}
+spread_dict = {"vac":"A", "reason-ta":"B", "fname":"C", "lname":"D", "other-names":"E", "email":"F", "phone":"G", "mehndi-choice":"H", "recep-choice":"I", "fast-food":"J", "comments":"K"}
 
 
 # this is for making sure the static files update every time
