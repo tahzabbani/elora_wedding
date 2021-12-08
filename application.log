@@ -2956,3 +2956,35 @@ INFO:werkzeug:127.0.0.1 - - [09/Nov/2021 17:23:04] "[36mGET /static/images/laky
 INFO:werkzeug:127.0.0.1 - - [09/Nov/2021 17:23:04] "[36mGET /static/images/lakyn_art/date.png HTTP/1.1[0m" 304 -
 INFO:werkzeug:127.0.0.1 - - [09/Nov/2021 17:23:04] "[36mGET /static/images/lakyn_art/title.png HTTP/1.1[0m" 304 -
 INFO:werkzeug:127.0.0.1 - - [09/Nov/2021 17:23:04] "[36mGET /static/images/lakyn_art/elorafahad.png HTTP/1.1[0m" 304 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.86.27:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 134-187-650
+INFO:werkzeug:127.0.0.1 - - [08/Dec/2021 16:34:53] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [08/Dec/2021 16:34:54] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Dec/2021 16:34:54] "GET /static/CSS/style.css?q=1634423916 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Dec/2021 16:34:55] "GET /static/JS/navbar_effects.js?q=1634001641 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Dec/2021 16:34:55] "GET /static/images/lakyn_art/title.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Dec/2021 16:34:55] "GET /static/images/lakyn_art/location.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Dec/2021 16:34:55] "GET /static/images/lakyn_art/elorafahad.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Dec/2021 16:34:55] "GET /static/images/lakyn_art/date.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Dec/2021 16:34:56] "GET /static/images/lakyn_art/rings.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Dec/2021 16:35:18] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Dec/2021 16:35:18] "[36mGET /static/CSS/style.css?q=1634423916 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Dec/2021 16:35:18] "[36mGET /static/JS/navbar_effects.js?q=1634001641 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Dec/2021 16:35:18] "GET /static/JS/rsvp_effects.js?q=1632094226 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Dec/2021 16:35:18] "GET /static/images/lakyn_art/rsvp.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Dec/2021 16:36:17] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Dec/2021 16:36:17] "[36mGET /static/CSS/style.css?q=1634423916 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Dec/2021 16:36:17] "[36mGET /static/JS/navbar_effects.js?q=1634001641 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Dec/2021 16:36:17] "[36mGET /static/JS/rsvp_effects.js?q=1632094226 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Dec/2021 16:36:17] "[36mGET /static/images/lakyn_art/rsvp.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Dec/2021 16:36:18] "[36mGET /static/images/lakyn_art/rings.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Dec/2021 16:36:28] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Dec/2021 16:36:28] "[36mGET /static/CSS/style.css?q=1634423916 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Dec/2021 16:36:28] "[36mGET /static/JS/navbar_effects.js?q=1634001641 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Dec/2021 16:36:28] "[36mGET /static/JS/rsvp_effects.js?q=1632094226 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Dec/2021 16:36:28] "[36mGET /static/images/lakyn_art/rsvp.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [08/Dec/2021 16:36:28] "[36mGET /static/images/lakyn_art/rings.png HTTP/1.1[0m" 304 -
