@@ -7,3 +7,5 @@ app.ini
 config.py
 application.log
 test.py
+client_secret.json
+token.json
