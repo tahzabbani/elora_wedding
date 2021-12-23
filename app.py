@@ -1,5 +1,6 @@
 from flask import Flask, render_template, redirect, jsonify, request, flash
 from flask.helpers import url_for
+from flask.templating import render_template_string
 import config
 import gspread
 import string
@@ -55,10 +56,6 @@ def fill_row(dict_form):
             filled = True
     return filled
 
-# TODO:
-# make bool function for adding to sheets
-# then if it returns true then display a new html page with success
-# if it fails then put some error message
 @app.route('/rsvp-form', methods=["POST"])
 def form():
     if request.method == "POST":
@@ -106,6 +103,9 @@ def rsvp():
 def registry():
     return render_template('registry.html')
 
+@app.route('/pics')
+def pics():
+    return render_template('pics.html')
 
 
 get_next_avail_row()

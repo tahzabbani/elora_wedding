@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pictures</title>
+    <link rel="icon" type="image/png" href="../static/images/lakyn_art/rings.png" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'CSS/style.css') }}">
+
+</head>
+
+<body id="all-pink">
+    <header>
+        <nav class="navbar fixed-top navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="home">F & E</a>
+                <button type="button" class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="navbar-toggler-icon"></span>                      
+                    </button>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav ml-auto nav-prop">
+                        <li class="nav-item"><a class="nav-link" href="home">home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="events">events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="accommodations">accommodations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="registry">registry</a></li>
+                        <li class="nav-item"><a class="nav-link" href="rsvp">rsvp</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="pics">pics</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid sizing">
+        <div class="row header-centering justify-content-center">
+            <div class="col-md-4 text-center">
+                <!-- <h1 class="tab-header">pictures</h1> -->
+                <img class="img-fluid fae" src="../static/images/elora-pics/IMG-0122.JPG">
+            </div>
+            <div class="col-md-4 text-center">
+                <img class="img-fluid fae" src="../static/images/elora-pics/IMG-6711.JPG">
+            </div>
+        </div>
+        <script src="{{ url_for('static', filename='JS/navbar_effects.js') }}"></script>
+
+</body>
+
+</html>
