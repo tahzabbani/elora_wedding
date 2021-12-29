@@ -211,6 +211,13 @@ img {
 
 .fae {
     height: 700px;
+}
+
+.ring-resize {
+    height: 700px;
+}
+
+.eng-pics {
     border: #e7a751 solid 2px;
     border-radius: 5px;
 }
