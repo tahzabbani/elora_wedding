@@ -1,6 +1,8 @@
 from flask import Flask, render_template, redirect, jsonify, request, flash
 from flask.helpers import url_for
 from flask.templating import render_template_string
+from sendgrid.helpers.mail import Mail, Email, To, Content
+import sendgrid
 import config
 import gspread
 import string
@@ -56,6 +58,23 @@ def fill_row(dict_form):
             filled = True
     return filled
 
+def send_email(email):
+    sg = sendgrid.SendGridAPIClient(api_key=config.sendgridkey)
+    from_email = Email("noreply@fahadandelora.com")  # Change to your verified sender
+    to_email = To(email)  # Change to your recipient
+    subject = "Thanks for your RSVP"
+    content = Content("text/plain", "testing")
+    mail = Mail(from_email, to_email, subject, content)
+
+    # Get a JSON-ready representation of the Mail object
+    mail_json = mail.get()
+
+    # Send an HTTP POST request to /mail/send
+    response = sg.client.mail.send.post(request_body=mail_json)
+    print(response.status_code)
+    print(response.headers)
+    
+
 @app.route('/rsvp-form', methods=["POST"])
 def form():
     if request.method == "POST":
@@ -63,7 +82,8 @@ def form():
         logging.info(req)
         # getting converted to list because of generator error
         if (fill_row(req)):
-            flash("congrats")
+            print(req['email'])
+            send_email(req['email'])
             return redirect('/success')
         else:
             flash("sorry")
@@ -107,6 +127,9 @@ def registry():
 def pics():
     return render_template('pics.html')
 
+@app.route('/faq')
+def faq():
+    return render_template('faq.html')
 
 get_next_avail_row()
 

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300&display=swap');
 
 /* use 650px media query for the image heights on the headers */
 
@@ -28,7 +29,7 @@ p {
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     background-color: #eec7be;
     word-wrap: break-word;
 }
@@ -40,7 +41,7 @@ body {
 }
 
 .nav-item {
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 .active {
@@ -50,6 +51,10 @@ body {
 
 .text-center {
     text-align: center;
+}
+
+.text-left {
+    text-align: left;
 }
 
 .header-centering {
@@ -98,7 +103,8 @@ body {
 /* accommodations */
 
 .hotel-info {
-    color: #340101
+    color: #340101;
+    font-size: 17px;
 }
 
 .acc-header {
@@ -107,6 +113,19 @@ body {
     text-align: center;
     /* margin-top: 200px; */
     color: #a7535d;
+}
+
+
+/* events */
+
+.event-desc {
+    font-weight: 300;
+}
+
+.event-header {
+    font-size: 60px;
+    color: #a7535d;
+    font-weight: 300;
 }
 
 
@@ -126,10 +145,14 @@ body {
 
 .nav-prop a {
     color: rgb(0, 0, 0);
+    transition: all .2s ease-in-out;
+    font-size: 17px;
 }
 
 .nav-prop a:hover {
-    color: #e7a751;
+    transform: scale(1.1);
+    color: #a7535d;
+    ;
 }
 
 .nav-prop li {
@@ -141,10 +164,16 @@ body {
 
 .vac-reasoning {
     display: none;
+    font-size: 22px;
 }
 
 .appearing-form-wrap {
     display: none;
+    font-size: 22px;
+}
+
+.form-control {
+    font-size: 20px;
 }
 
 label {
@@ -153,13 +182,13 @@ label {
 
 .inner-label {
     opacity: 0.7;
-    font-size: 10px;
+    font-size: 14px;
     margin-bottom: 0;
     font-weight: 300;
 }
 
 .radio-label {
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .required-field {
@@ -229,9 +258,16 @@ img {
     margin-top: 250px;
 }
 
+
+/* faq */
+
+.faq-info {
+    font-size: 17px;
+}
+
 .google-maps {
     overflow: hidden;
-    padding-bottom: 50%;
+    padding-bottom: 70%;
     position: relative;
     height: 0;
 }
@@ -247,8 +283,10 @@ img {
 }
 
 .content-spacing {
-    margin-top: 400px;
-    margin-bottom: 400px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 
@@ -268,6 +306,16 @@ img {
         height: 375px;
     }
     .acc-pic {
+        height: 400px;
+    }
+    .content-spacing {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .fae {
         height: 400px;
     }
 }

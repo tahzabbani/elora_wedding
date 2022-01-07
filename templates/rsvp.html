@@ -32,6 +32,7 @@
                         <li class="nav-item"><a class="nav-link" href="registry">registry</a></li>
                         <li class="nav-item active"><a class="nav-link" href="rsvp">rsvp</a></li>
                         <li class="nav-item"><a class="nav-link" href="pics">pics</a></li>
+                        <li class="nav-item"><a class="nav-link" href="faq">questions/fyi</a></li>
                     </ul>
                 </div>
 
@@ -49,17 +50,17 @@
         </div>
     </div>
     <div class="container-fluid people">
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-sm text-center">
                 <h1 class="content-spacing">come back in January to RSVP! :)</h1>
             </div>
-        </div>
+        </div> -->
         <!-- not displayed rn -->
-        <form class="rsvp-form-wrapper py-5" id="main-form" action="/rsvp-form" method="POST" style="display: none;">
+        <form class="rsvp-form-wrapper py-5" id="main-form" action="/rsvp-form" method="POST">
             <div class="form-row justify-content-center">
                 <div class="col-md-4 form-group text-center">
                     <h2>First Thing's First...</h2>
-                    <p style="margin-bottom: 1rem;">Are you fully vaccinated? <br> (or will be at least two weeks prior to the events)</p>
+                    <p class="mb-1">Are you fully vaccinated with a booster? <br> (or will be at least two weeks prior to the events)</p>
                     <div class="btn-group-toggle" data-toggle="buttons">
                         <label class="btn btn-outline-primary yes-vac" for="yes-vac">
                           <input type="radio" class="form-check-input" id="yes-vac" name="vac" value="yes" required>yes
@@ -109,14 +110,14 @@
                         <label for="phone">Phone Number<span class="required-field">*</span>
                             <p class="inner-label">Please enter 10 digit number in ########## format.</p>
                         </label>
-                        <input type="tel" class="form-control" id="phone" name="phone" pattern="\d{10}" placeholder="##########" required>
+                        <input type="tel" class="form-control" id="phone" name="phone" maxlength="10" pattern="\d{10}" placeholder="##########" required>
                     </div>
                 </div>
                 <div class="form-row justify-content-center py-3">
                     <div class="col-sm-4 mx-3 mx-sm-0">
                         <div style="padding-bottom: 2px;">
                             <p style="display: inline;">Mehndi</p><span class="required-field">*</span>
-                            <p class="inner-label" style="opacity: 0.7; font-size: 10px;">March 4, 2022</p>
+                            <p class="inner-label">March 4, 2022</p>
                         </div>
                         <div class="form-check">
                             <label class="form-check-label radio-label">
@@ -134,7 +135,7 @@
                     <div class="col-sm-4 mx-3 mx-sm-0">
                         <div style="padding-bottom: 2px;">
                             <p style="display: inline;">Reception</p><span class="required-field">*</span>
-                            <p class="inner-label" style="opacity: 0.7; font-size: 10px;">March 5, 2022</p>
+                            <p class="inner-label">March 5, 2022</p>
                         </div>
                         <div class="form-check">
                             <label class="form-check-label radio-label">
