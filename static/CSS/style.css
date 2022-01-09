@@ -152,7 +152,6 @@ body {
 .nav-prop a:hover {
     transform: scale(1.1);
     color: #a7535d;
-    ;
 }
 
 .nav-prop li {
@@ -199,10 +198,11 @@ label {
 .sbmt-btn {
     border: rgb(0, 0, 0) 2px solid;
     cursor: pointer;
+    transition: all .2s ease-in-out;
 }
 
 .sbmt-btn:hover {
-    transition: background-color 1s ease;
+    transform: scale(1.1);
     background-color: #e7a751;
 }
 
@@ -237,10 +237,6 @@ img {
 
 
 /* pictures */
-
-.fae {
-    height: 700px;
-}
 
 .ring-resize {
     height: 700px;
@@ -289,6 +285,19 @@ img {
     margin-right: 25%;
 }
 
+.content-margins {
+    margin-top: 75px;
+    margin-bottom: 50px;
+}
+
+
+/* registry */
+
+.white-footer {
+    padding-top: 12.5vh;
+    color: #faefec;
+}
+
 
 /* media queries */
 
@@ -311,11 +320,5 @@ img {
     .content-spacing {
         margin-left: 0;
         margin-right: 0;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .fae {
-        height: 400px;
     }
 }

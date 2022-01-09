@@ -22,8 +22,10 @@ worksheet = sh.get_worksheet(0)
 
 # the values were being filled in random 
 # cells in the server, so this is the solution
-spread_dict = {"vac":"A", "reason-ta":"B", "fname":"C", "lname":"D", "other-names":"E", "email":"F", "phone":"G", "mehndi-choice":"H", "recep-choice":"I", "fast-food":"J", "comments":"K"}
+spread_dict = {"vac":"A", "reason-ta":"B", "fname":"C", "lname":"D", "num_others": "E", "other-names":"F", "email":"G", "phone":"H", "mehndi-choice":"I", "recep-choice":"J", "fast-food":"K", "comments":"L"}
 
+yes_content = "Hello!\n\nWe are so excited to be able to celebrate this special occasion with you! We've saved you a seat - please feel free to contact us at ejrobbani@gmail.com if you have any questions or if anything changes.\n\nCan't wait to see you in March!\n\nFahad & Elora"
+no_content = "Hello!\n\nWe wish you were able to celebrate with us, but we completely understand and hope to still have your warm wishes for the future!\n\nPlease feel free to contact us at ejrobbani@gmail.com if you have any questions or if anything changes.\n\nFahad & Elora"
 
 # this is for making sure the static files update every time
 # that there's a reload, it adds a timestamp to the files
@@ -42,6 +44,13 @@ def dated_url_for(endpoint, **values):
     return url_for(endpoint, **values)
 #########################
 
+def check_duplicate(email):
+    list_of_emails = worksheet.col_values(7)
+    for sheet_email in list_of_emails:
+        if email.lower().strip() == sheet_email.lower().strip():
+            return False
+    return True
+
 def get_next_avail_row():
     row_number = len(worksheet.col_values(1)) + 1
     return row_number
@@ -58,12 +67,15 @@ def fill_row(dict_form):
             filled = True
     return filled
 
-def send_email(email):
+def send_email(email, req):
     sg = sendgrid.SendGridAPIClient(api_key=config.sendgridkey)
-    from_email = Email("noreply@fahadandelora.com")  # Change to your verified sender
-    to_email = To(email)  # Change to your recipient
+    from_email = Email("noreply@fahadandelora.com")
+    to_email = To(email)
+    if (req['mehndi-choice'] == 'no' or req['recep-choice'] == 'no'):
+        content = Content("text/plain", no_content)
+    else:
+        content = Content("text/plain", yes_content)
     subject = "Thanks for your RSVP"
-    content = Content("text/plain", "testing")
     mail = Mail(from_email, to_email, subject, content)
 
     # Get a JSON-ready representation of the Mail object
@@ -80,20 +92,24 @@ def form():
     if request.method == "POST":
         req = request.form
         logging.info(req)
+        if (check_duplicate(req['email']) == False):
+            return redirect('/duplicate_email')
         # getting converted to list because of generator error
         if (fill_row(req)):
-            print(req['email'])
-            send_email(req['email'])
+            # send email to email address in form
+            send_email(req['email'], req)
             return redirect('/success')
         else:
-            flash("sorry")
             return redirect('/failure')
- 
     return "yay"
 
 @app.route('/')
 def entry():
     return redirect('/home')
+
+@app.route('/duplicate_email')
+def duplicate_email():
+    return render_template('duplicate_email.html')
 
 @app.route('/failure')
 def failure():
