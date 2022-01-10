@@ -62,7 +62,7 @@ body {
     background-color: #eec7be;
 }
 
-.people {
+.white-back {
     /* background-color: rgba(53, 104, 70, 0.685); */
     background-color: #faefec;
     position: relative;
@@ -231,7 +231,7 @@ label {
 }
 
 .acc-pic {
-    height: 500px;
+    /* height: 500px; */
 }
 
 img {

@@ -41,140 +41,132 @@
     </header>
 
     <div class="container-fluid sizing">
-        <div class="row header-centering">
-            <div class="col-sm text-center">
+        <div class="row header-centering sizing">
+            <div class="col-sm text-center sizing">
                 <!-- <span class="home-header">rsvp still kind of being constructed</span> -->
                 <h1 class="tab-header">rsvp</h1>
                 <img class="img-fluid big-pic" src="../static/images/lakyn_art/rsvp.png">
             </div>
         </div>
     </div>
-    <div class="container-fluid people">
-        <!-- <div class="row">
-            <div class="col-sm text-center">
-                <h1 class="content-spacing">come back in January to RSVP! :)</h1>
-            </div>
-        </div> -->
-        <!-- not displayed rn -->
-        <form class="rsvp-form-wrapper py-5" id="main-form" action="/rsvp-form" method="POST">
-            <div class="form-row justify-content-center">
-                <div class="col-md-4 form-group text-center">
-                    <h2>First Thing's First...</h2>
-                    <p class="mb-1" id="vax-q">Are you fully vaccinated with a booster? <br> (or will be at least two weeks prior to the events)</p>
-                    <div class="btn-group-toggle" data-toggle="buttons">
-                        <label class="btn btn-outline-primary yes-vac" for="yes-vac">
+    <form class="rsvp-form-wrapper py-5 white-back" id="main-form" action="/rsvp-form" method="POST">
+        <div class="form-row justify-content-center">
+            <div class="col-md-4 form-group text-center">
+                <h2>First Thing's First...</h2>
+                <p class="mb-1" id="vax-q">Are you fully vaccinated with a booster? <br> (or will be at least two weeks prior to the events)</p>
+                <div class="btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-outline-primary yes-vac" for="yes-vac">
                           <input type="radio" class="form-check-input" id="yes-vac" name="vac" value="yes" required>yes
                         </label>
-                        <label class="btn btn-outline-danger no-vac" for="no-vac">
+                    <label class="btn btn-outline-danger no-vac" for="no-vac">
                           <input type="radio" class="form-check-input" id="no-vac" name="vac" value="no" required>no
                         </label>
-                    </div>
                 </div>
             </div>
-            <div class="vac-reasoning" id="scroll-no">
-                <div class="form-row justify-content-center">
-                    <div class="col-sm-4 form-group mx-3 mx-sm-0">
-                        <label for="reason-ta">Why aren't you vaccinated?<span class="required-field">*</span></label>
-                        <textarea class="form-control" id="reason-ta" name="reason-ta" required></textarea>
-                        <!-- <input type="text" class="form-control" id="reason-ta" name="reason=ta" -->
-                    </div>
+        </div>
+        <div class="vac-reasoning" id="scroll-no">
+            <div class="form-row justify-content-center">
+                <div class="col-sm-4 form-group mx-3 mx-sm-0">
+                    <label for="reason-ta">Why aren't you vaccinated?<span class="required-field">*</span></label>
+                    <textarea class="form-control" id="reason-ta" name="reason-ta" required></textarea>
+                    <!-- <input type="text" class="form-control" id="reason-ta" name="reason=ta" -->
                 </div>
             </div>
-            <div class="appearing-form-wrap" id="scroll-yes">
-                <div class="form-row justify-content-center">
-                    <!-- TODO: mobile has weird gap between names because of form group -->
-                    <div class="col-sm-2 mx-3 mx-sm-0">
-                        <label for="fname">First Name<span class="required-field">*</span></label>
-                        <input type="text" class="form-control" id="fname" name="fname" placeholder="First name" required><br>
-                    </div>
-                    <div class="col-sm-2 mx-3 mx-sm-0">
-                        <label for="lname">Last Name<span class="required-field">*</span></label>
-                        <input type="text" class="form-control" id="lname" name="lname" placeholder="Last name" required><br>
-                    </div>
+        </div>
+        <div class="appearing-form-wrap" id="scroll-yes">
+            <div class="form-row justify-content-center">
+                <!-- TODO: mobile has weird gap between names because of form group -->
+                <div class="col-sm-2 mx-3 mx-sm-0">
+                    <label for="fname">First Name<span class="required-field">*</span></label>
+                    <input type="text" class="form-control" id="fname" name="fname" placeholder="First name" required><br>
                 </div>
-                <div class="form-row justify-content-center">
-                    <div class="col-sm-4 mx-3 mx-sm-0">
-                        <label for="num_others">How many guests are in your party? (including yourself)<span class="required-field">*</span></label>
-                        <input type="number" class="form-control" id="num_others" name="num_others" required><br>
-                    </div>
+                <div class="col-sm-2 mx-3 mx-sm-0">
+                    <label for="lname">Last Name<span class="required-field">*</span></label>
+                    <input type="text" class="form-control" id="lname" name="lname" placeholder="Last name" required><br>
                 </div>
-                <div class="form-row justify-content-center">
-                    <div class="col-sm-4 mx-3 mx-sm-0">
-                        <label for="other-names">Names of others in your party 
+            </div>
+            <div class="form-row justify-content-center">
+                <div class="col-sm-4 mx-3 mx-sm-0">
+                    <label for="num_others">How many guests are in your party? (including yourself)<span class="required-field">*</span></label>
+                    <input type="number" class="form-control" id="num_others" name="num_others" required><br>
+                </div>
+            </div>
+            <div class="form-row justify-content-center">
+                <div class="col-sm-4 mx-3 mx-sm-0">
+                    <label for="other-names">Names of others in your party 
                             <p class="inner-label">Please separate full names with commas.</p></label>
-                        <input type="text" class="form-control" id="other-names" name="other-names"><br>
-                    </div>
+                    <input type="text" class="form-control" id="other-names" name="other-names"><br>
                 </div>
-                <div class="form-row justify-content-center">
-                    <div class="col-sm-4 mx-3 mx-sm-0">
-                        <label for="email">Email<span class="required-field">*</span></label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Email address" required><br>
-                    </div>
+            </div>
+            <div class="form-row justify-content-center">
+                <div class="col-sm-4 mx-3 mx-sm-0">
+                    <label for="email">Email<span class="required-field">*</span></label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email address" required><br>
                 </div>
-                <div class="form-row justify-content-center">
-                    <div class="col-sm-4 mx-3 mx-sm-0">
-                        <label for="phone">Phone Number<span class="required-field">*</span>
+            </div>
+            <div class="form-row justify-content-center">
+                <div class="col-sm-4 mx-3 mx-sm-0">
+                    <label for="phone">Phone Number<span class="required-field">*</span>
                             <p class="inner-label">Please enter 10 digit number in ########## format.</p>
                         </label>
-                        <input type="tel" class="form-control" id="phone" name="phone" maxlength="10" pattern="\d{10}" placeholder="##########" required>
-                    </div>
-                </div>
-                <div class="form-row justify-content-center py-3">
-                    <div class="col-sm-4 mx-3 mx-sm-0">
-                        <div style="padding-bottom: 2px;">
-                            <p style="display: inline;">Mehndi</p><span class="required-field">*</span>
-                            <p class="inner-label">March 4, 2022</p>
-                        </div>
-                        <div class="form-check">
-                            <label class="form-check-label radio-label">
-                             <input type="radio" class="form-check-input radio-choice-btn" name="mehndi-choice" value="yes" required>yes
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <label class="form-check-label radio-label">
-                            <input type="radio" class="form-check-input radio-choice-btn" name="mehndi-choice" value="no" required>no
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-row justify-content-center py-3">
-                    <div class="col-sm-4 mx-3 mx-sm-0">
-                        <div style="padding-bottom: 2px;">
-                            <p style="display: inline;">Reception</p><span class="required-field">*</span>
-                            <p class="inner-label">March 5, 2022</p>
-                        </div>
-                        <div class="form-check">
-                            <label class="form-check-label radio-label">
-                             <input type="radio" class="form-check-input radio-choice-btn" name="recep-choice" value="yes" required>yes
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <label class="form-check-label radio-label">
-                            <input type="radio" class="form-check-input radio-choice-btn" name="recep-choice" value="no" required>no
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-row justify-content-center pt-3">
-                    <div class="col-sm-4 mx-3 mx-sm-0">
-                        <label for="fast-food">What's your favorite fast food restaurant?
-                        <p class="inner-label">This won't affect your RSVP, but we'll judge you.</p>
-                        </label>
-                        <input type="text" class="form-control" id="fast-food" name="fast-food"><br>
-                    </div>
-                </div>
-                <div class="form-row justify-content-center py-3">
-                    <div class="col-sm-4 form-group mx-3 mx-sm-0">
-                        <label for="comments">Comments and Questions</label>
-                        <textarea class="form-control" id="comments" name="comments"></textarea>
-                    </div>
-                </div>
-                <div class="form-row justify-content-center">
-                    <input type="submit" class="btn sbmt-btn">
+                    <input type="tel" class="form-control" id="phone" name="phone" maxlength="10" pattern="\d{10}" placeholder="##########" required>
                 </div>
             </div>
-        </form>
-    </div>
+            <div class="form-row justify-content-center py-3">
+                <div class="col-sm-4 mx-3 mx-sm-0">
+                    <div style="padding-bottom: 2px;">
+                        <p style="display: inline;">Mehndi</p><span class="required-field">*</span>
+                        <p class="inner-label">March 4, 2022</p>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label radio-label">
+                             <input type="radio" class="form-check-input radio-choice-btn" name="mehndi-choice" value="yes" required>yes
+                            </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label radio-label">
+                            <input type="radio" class="form-check-input radio-choice-btn" name="mehndi-choice" value="no" required>no
+                            </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row justify-content-center py-3">
+                <div class="col-sm-4 mx-3 mx-sm-0">
+                    <div style="padding-bottom: 2px;">
+                        <p style="display: inline;">Reception</p><span class="required-field">*</span>
+                        <p class="inner-label">March 5, 2022</p>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label radio-label">
+                             <input type="radio" class="form-check-input radio-choice-btn" name="recep-choice" value="yes" required>yes
+                            </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label radio-label">
+                            <input type="radio" class="form-check-input radio-choice-btn" name="recep-choice" value="no" required>no
+                            </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row justify-content-center pt-3">
+                <div class="col-sm-4 mx-3 mx-sm-0">
+                    <label for="fast-food">What's your favorite fast food restaurant?
+                        <p class="inner-label">This won't affect your RSVP, but we'll judge you.</p>
+                        </label>
+                    <input type="text" class="form-control" id="fast-food" name="fast-food"><br>
+                </div>
+            </div>
+            <div class="form-row justify-content-center py-3">
+                <div class="col-sm-4 form-group mx-3 mx-sm-0">
+                    <label for="comments">Comments and Questions</label>
+                    <textarea class="form-control" id="comments" name="comments"></textarea>
+                </div>
+            </div>
+            <div class="form-row justify-content-center">
+                <input type="submit" class="btn sbmt-btn">
+            </div>
+        </div>
+    </form>
     <!-- TODO: make this a url_for variable -->
     <script src="{{ url_for('static', filename='JS/navbar_effects.js') }}"></script>
     <script src="{{ url_for('static', filename='JS/rsvp_effects.js') }}"></script>
