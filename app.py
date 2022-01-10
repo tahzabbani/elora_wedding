@@ -71,7 +71,7 @@ def send_email(email, req):
     sg = sendgrid.SendGridAPIClient(api_key=config.sendgridkey)
     from_email = Email("noreply@fahadandelora.com")
     to_email = To(email)
-    if (req['mehndi-choice'] == 'no' or req['recep-choice'] == 'no'):
+    if (req['mehndi-choice'] == 'no' and req['recep-choice'] == 'no'):
         content = Content("text/plain", no_content)
     else:
         content = Content("text/plain", yes_content)
