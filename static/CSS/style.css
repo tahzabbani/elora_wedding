@@ -102,6 +102,10 @@ body {
 
 /* accommodations */
 
+.airbnb-list {
+    /* color: #a7535d; */
+}
+
 .hotel-info {
     color: #340101;
     font-size: 17px;
@@ -223,7 +227,7 @@ label {
 
 .event-pic {
     height: 150px;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 .reg-pic {
@@ -232,6 +236,7 @@ label {
 
 .acc-pic {
     /* height: 500px; */
+    padding-bottom: 60px;
 }
 
 img {
