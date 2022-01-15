@@ -15,3 +15,10 @@ $(".no-vac").click(function() {
         scrollTop: $("#scroll-no").offset().top - 60
     });
 })
+
+$(document).ready(function() {
+    $("#main-form").submit(function() {
+        $(".btnFetch").attr("disabled", true);
+        return true;
+    });
+});

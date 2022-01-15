@@ -103,10 +103,8 @@ def form():
         # getting converted to list because of generator error
         if (fill_row(req)):
             # send email to email address in form
-            if (send_email(req['email'], req)):
-                return redirect('/success')
-            else:
-                return redirect('/conf_fail')
+            send_email(req['email'], req)
+            return redirect('/success')
         else:
             return redirect('/failure')
     return "yay"
