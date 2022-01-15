@@ -7205,3 +7205,185 @@ INFO:werkzeug:127.0.0.1 - - [12/Jan/2022 19:30:09] "GET /static/CSS/style.css?q=
 INFO:werkzeug:127.0.0.1 - - [12/Jan/2022 19:30:09] "[36mGET /static/JS/navbar_effects.js?q=1634001641 HTTP/1.1[0m" 304 -
 INFO:werkzeug:127.0.0.1 - - [12/Jan/2022 19:30:09] "[36mGET /static/images/lakyn_art/acc.png HTTP/1.1[0m" 304 -
 INFO:werkzeug:127.0.0.1 - - [12/Jan/2022 19:30:09] "[36mGET /static/images/lakyn_art/rings.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 11:21:53] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 11:21:53] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 11:21:53] "GET /static/CSS/style.css?q=1642179457 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 11:21:53] "[36mGET /static/JS/navbar_effects.js?q=1634420925 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 11:21:53] "[36mGET /static/images/lakyn_art/title.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 11:21:53] "[36mGET /static/images/lakyn_art/location.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 11:21:53] "[36mGET /static/images/lakyn_art/elorafahad.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 11:21:53] "[36mGET /static/images/lakyn_art/date.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 11:21:54] "[36mGET /static/images/lakyn_art/rings.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 11:21:55] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 11:21:55] "[36mGET /static/CSS/style.css?q=1642179457 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 11:21:55] "GET /static/images/lakyn_art/rsvp.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 11:21:55] "GET /static/JS/rsvp_effects.js?q=1632082920 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 11:21:55] "[36mGET /static/JS/navbar_effects.js?q=1634420925 HTTP/1.1[0m" 304 -
+INFO:root:ImmutableMultiDict([('vac', 'yes'), ('reason-ta', ''), ('fname', 'tash'), ('lname', 'robani'), ('num_others', '3'), ('other-names', ''), ('email', 'tahzabbani123@gmail.com'), ('phone', '9999999999'), ('mehndi-choice', 'no'), ('recep-choice', 'yes'), ('fast-food', ''), ('comments', '')])
+ERROR:app:Exception on /rsvp-form [POST]
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/tahseenrobbani/Documents/code/elora_wedding/app.py", line 95, in form
+    req['num_others'] = int(req['num_others'])
+  File "/opt/homebrew/lib/python3.9/site-packages/werkzeug/datastructures.py", line 146, in __setitem__
+    is_immutable(self)
+  File "/opt/homebrew/lib/python3.9/site-packages/werkzeug/datastructures.py", line 20, in is_immutable
+    raise TypeError(f"{type(self).__name__!r} objects are immutable")
+TypeError: 'ImmutableMultiDict' objects are immutable
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 11:22:13] "[35m[1mPOST /rsvp-form HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 11:22:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:ImmutableMultiDict([('vac', 'yes'), ('reason-ta', ''), ('fname', 'tash'), ('lname', 'robani'), ('num_others', '3'), ('other-names', ''), ('email', 'tahzabbani123@gmail.com'), ('phone', '9999999999'), ('mehndi-choice', 'no'), ('recep-choice', 'yes'), ('fast-food', ''), ('comments', '')])
+ERROR:app:Exception on /rsvp-form [POST]
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/tahseenrobbani/Documents/code/elora_wedding/app.py", line 95, in form
+    req['num_others'] = int(req['num_others'])
+  File "/opt/homebrew/lib/python3.9/site-packages/werkzeug/datastructures.py", line 146, in __setitem__
+    is_immutable(self)
+  File "/opt/homebrew/lib/python3.9/site-packages/werkzeug/datastructures.py", line 20, in is_immutable
+    raise TypeError(f"{type(self).__name__!r} objects are immutable")
+TypeError: 'ImmutableMultiDict' objects are immutable
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 11:22:24] "[35m[1mPOST /rsvp-form HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 11:22:27] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 11:22:28] "[36mGET /static/CSS/style.css?q=1642179457 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 11:22:28] "[36mGET /static/JS/navbar_effects.js?q=1634420925 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 11:22:28] "[36mGET /static/JS/rsvp_effects.js?q=1632082920 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 11:22:28] "[36mGET /static/images/lakyn_art/rsvp.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 11:22:28] "[36mGET /static/images/lakyn_art/rings.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 18:57:25] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 18:57:25] "[36mGET /static/CSS/style.css?q=1642179457 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 18:57:25] "[36mGET /static/JS/navbar_effects.js?q=1634420925 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 18:57:25] "[36mGET /static/JS/rsvp_effects.js?q=1632082920 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 18:57:25] "[36mGET /static/images/lakyn_art/rsvp.png HTTP/1.1[0m" 304 -
+INFO:root:ImmutableMultiDict([('vac', 'yes'), ('reason-ta', ''), ('fname', 'tahseen'), ('lname', 'robbnai'), ('num_others', '2'), ('other-names', ''), ('email', 'tahzabbani123@gmail.com'), ('phone', '8888888888'), ('mehndi-choice', 'yes'), ('recep-choice', 'yes'), ('fast-food', ''), ('comments', '')])
+INFO:root:here is the letter:A and value:yes
+INFO:root:here is the letter:B and value:
+INFO:root:here is the letter:C and value:tahseen
+INFO:root:here is the letter:D and value:robbnai
+INFO:root:here is the letter:F and value:
+INFO:root:here is the letter:G and value:tahzabbani123@gmail.com
+INFO:root:here is the letter:H and value:8888888888
+INFO:root:here is the letter:I and value:yes
+INFO:root:here is the letter:J and value:yes
+INFO:root:here is the letter:K and value:
+INFO:root:here is the letter:L and value:
+ERROR:app:Exception on /rsvp-form [POST]
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/tahseenrobbani/Documents/code/elora_wedding/app.py", line 105, in form
+    send_email(req['email'], req)
+  File "/Users/tahseenrobbani/Documents/code/elora_wedding/app.py", line 76, in send_email
+    sg = sendgrid.SendGridAPIClient(api_key=config.sendgridkey)
+AttributeError: module 'config' has no attribute 'sendgridkey'
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 18:57:50] "[35m[1mPOST /rsvp-form HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:ImmutableMultiDict([('vac', 'yes'), ('reason-ta', ''), ('fname', 'tahseen'), ('lname', 'robbnai'), ('num_others', '2'), ('other-names', ''), ('email', 'tahzabbani123@gmail.com'), ('phone', '8888888888'), ('mehndi-choice', 'yes'), ('recep-choice', 'yes'), ('fast-food', ''), ('comments', '')])
+INFO:root:here is the letter:A and value:yes
+INFO:root:here is the letter:B and value:
+INFO:root:here is the letter:C and value:tahseen
+INFO:root:here is the letter:D and value:robbnai
+INFO:root:here is the letter:F and value:
+INFO:root:here is the letter:G and value:tahzabbani123@gmail.com
+INFO:root:here is the letter:H and value:8888888888
+INFO:root:here is the letter:I and value:yes
+INFO:root:here is the letter:J and value:yes
+INFO:root:here is the letter:K and value:
+INFO:root:here is the letter:L and value:
+ERROR:app:Exception on /rsvp-form [POST]
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/tahseenrobbani/Documents/code/elora_wedding/app.py", line 105, in form
+    send_email(req['email'], req)
+  File "/Users/tahseenrobbani/Documents/code/elora_wedding/app.py", line 76, in send_email
+    sg = sendgrid.SendGridAPIClient(api_key=config.sendgridkey)
+AttributeError: module 'config' has no attribute 'sendgridkey'
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 18:59:30] "[35m[1mPOST /rsvp-form HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:root:ImmutableMultiDict([('vac', 'yes'), ('reason-ta', ''), ('fname', 'tahseen'), ('lname', 'robbnai'), ('num_others', '2'), ('other-names', ''), ('email', 'tahzabbani123@gmai'), ('phone', '8888888888'), ('mehndi-choice', 'yes'), ('recep-choice', 'yes'), ('fast-food', ''), ('comments', '')])
+INFO:root:here is the letter:A and value:yes
+INFO:root:here is the letter:B and value:
+INFO:root:here is the letter:C and value:tahseen
+INFO:root:here is the letter:D and value:robbnai
+INFO:root:here is the letter:F and value:
+INFO:root:here is the letter:G and value:tahzabbani123@gmai
+INFO:root:here is the letter:H and value:8888888888
+INFO:root:here is the letter:I and value:yes
+INFO:root:here is the letter:J and value:yes
+INFO:root:here is the letter:K and value:
+INFO:root:here is the letter:L and value:
+ERROR:app:Exception on /rsvp-form [POST]
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/opt/homebrew/lib/python3.9/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/tahseenrobbani/Documents/code/elora_wedding/app.py", line 106, in form
+    if (send_email(req['email'], req)):
+  File "/Users/tahseenrobbani/Documents/code/elora_wedding/app.py", line 77, in send_email
+    sg = sendgrid.SendGridAPIClient(api_key=config.sendgridkey)
+AttributeError: module 'config' has no attribute 'sendgridkey'
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 19:06:33] "[35m[1mPOST /rsvp-form HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 19:08:19] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 19:08:19] "[36mGET /static/CSS/style.css?q=1642179457 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 19:08:19] "[36mGET /static/JS/navbar_effects.js?q=1634420925 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 19:08:19] "[36mGET /static/JS/rsvp_effects.js?q=1632082920 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 19:08:19] "[36mGET /static/images/lakyn_art/rsvp.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 19:08:19] "[36mGET /static/images/lakyn_art/rings.png HTTP/1.1[0m" 304 -
+INFO:root:ImmutableMultiDict([('vac', 'yes'), ('reason-ta', ''), ('fname', 'f'), ('lname', 'f'), ('num_others', '2'), ('other-names', ''), ('email', 'fjaiowefj@gamgeaw'), ('phone', '2222222222'), ('mehndi-choice', 'no'), ('recep-choice', 'yes'), ('fast-food', ''), ('comments', '')])
+INFO:root:here is the letter:A and value:yes
+INFO:root:here is the letter:B and value:
+INFO:root:here is the letter:C and value:f
+INFO:root:here is the letter:D and value:f
+INFO:root:here is the letter:F and value:
+INFO:root:here is the letter:G and value:fjaiowefj@gamgeaw
+INFO:root:here is the letter:H and value:2222222222
+INFO:root:here is the letter:I and value:no
+INFO:root:here is the letter:J and value:yes
+INFO:root:here is the letter:K and value:
+INFO:root:here is the letter:L and value:
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 19:08:40] "[32mPOST /rsvp-form HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 19:08:40] "GET /conf_fail HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 19:08:40] "[36mGET /static/CSS/style.css?q=1642179457 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 19:08:47] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 19:08:47] "[36mGET /static/CSS/style.css?q=1642179457 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 19:08:47] "[36mGET /static/JS/navbar_effects.js?q=1634420925 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 19:08:47] "[36mGET /static/images/lakyn_art/title.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 19:08:47] "[36mGET /static/images/lakyn_art/elorafahad.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 19:08:47] "[36mGET /static/images/lakyn_art/location.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 19:08:47] "[36mGET /static/images/lakyn_art/date.png HTTP/1.1[0m" 304 -

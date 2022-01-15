@@ -60,9 +60,15 @@ def get_column(key):
 
 def fill_row(dict_form):
     filled = False
+    # set num to integer for google sheet
+    num_to_int = 0
     avail_row = get_next_avail_row()
     for key in dict_form.keys():
-        if (worksheet.update((get_column(key) + "{}").format(avail_row), dict_form[key])):
+        if (get_column(key) == 'E'):
+            num_to_int = dict_form[key]
+            worksheet.update((get_column(key) + "{}").format(avail_row), int(num_to_int))
+            filled = True
+        elif (get_column(key) != 'E' and worksheet.update((get_column(key) + "{}").format(avail_row), dict_form[key])):
             logging.info("here is the letter:" + str(get_column(key)) + " and value:" + dict_form[key])
             filled = True
     return filled
@@ -97,8 +103,10 @@ def form():
         # getting converted to list because of generator error
         if (fill_row(req)):
             # send email to email address in form
-            send_email(req['email'], req)
-            return redirect('/success')
+            if (send_email(req['email'], req)):
+                return redirect('/success')
+            else:
+                return redirect('/conf_fail')
         else:
             return redirect('/failure')
     return "yay"
@@ -106,6 +114,10 @@ def form():
 @app.route('/')
 def entry():
     return redirect('/home')
+
+@app.route('/conf_fail')
+def conf_fail():
+    return render_template('conf_fail.html')
 
 @app.route('/duplicate_email')
 def duplicate_email():
