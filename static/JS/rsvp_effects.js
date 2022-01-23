@@ -16,9 +16,13 @@ $(".no-vac").click(function() {
     });
 })
 
-$(document).ready(function() {
-    $("#main-form").submit(function() {
-        $(".btnFetch").attr("disabled", true);
-        return true;
-    });
-});
+var fewSeconds = 3;
+$('#btnFetch').click(function() {
+    var btn = $(this);
+    setTimeout(function() {
+        btn.prop('disabled', true);
+    }, 70);
+    setTimeout(function() {
+        btn.prop('disabled', false);
+    }, fewSeconds * 1000);
+})

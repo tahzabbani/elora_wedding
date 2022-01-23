@@ -7529,3 +7529,239 @@ INFO:root:here is the letter:J and value:yes
 INFO:root:here is the letter:K and value:
 INFO:root:here is the letter:L and value:
 INFO:werkzeug:127.0.0.1 - - [14/Jan/2022 19:34:19] "POST /rsvp-form HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:00:47] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:00:47] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:00:47] "GET /static/CSS/style.css?q=1642037406 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:00:47] "[36mGET /static/JS/navbar_effects.js?q=1634001641 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:00:47] "GET /static/images/lakyn_art/elorafahad.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:00:47] "GET /static/images/lakyn_art/title.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:00:47] "GET /static/images/lakyn_art/date.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:00:47] "GET /static/images/lakyn_art/location.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:00:47] "[36mGET /static/CSS/style.css?q=1642037406 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:00:47] "[36mGET /static/images/lakyn_art/rings.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:00:48] "[36mGET /static/JS/navbar_effects.js?q=1634001641 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:00:49] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:00:49] "[36mGET /static/CSS/style.css?q=1642037406 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:00:49] "GET /static/JS/rsvp_effects.js?q=1642458333 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:00:50] "[36mGET /static/JS/navbar_effects.js?q=1634001641 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:00:50] "GET /static/images/lakyn_art/rsvp.png HTTP/1.1" 200 -
+INFO:root:ImmutableMultiDict([('vac', 'yes'), ('reason-ta', ''), ('fname', 'ta'), ('lname', 'ta'), ('num_others', '3'), ('other-names', ''), ('email', 'af@gamil.com'), ('phone', '1121222222'), ('mehndi-choice', 'yes'), ('recep-choice', 'yes'), ('fast-food', ''), ('comments', '')])
+INFO:root:here is the letter:A and value:yes
+INFO:root:here is the letter:B and value:
+INFO:root:here is the letter:C and value:ta
+INFO:root:here is the letter:D and value:ta
+INFO:root:here is the letter:F and value:
+INFO:root:here is the letter:G and value:af@gamil.com
+INFO:root:here is the letter:H and value:1121222222
+INFO:root:here is the letter:I and value:yes
+INFO:root:here is the letter:J and value:yes
+INFO:root:here is the letter:K and value:
+INFO:root:here is the letter:L and value:
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:01:10] "[32mPOST /rsvp-form HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:01:10] "GET /success HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:01:10] "[36mGET /static/CSS/style.css?q=1642037406 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:01:13] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:01:13] "[36mGET /static/CSS/style.css?q=1642037406 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:01:13] "[36mGET /static/JS/navbar_effects.js?q=1634001641 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:01:13] "[36mGET /static/images/lakyn_art/date.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:01:13] "[36mGET /static/images/lakyn_art/title.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:01:13] "[36mGET /static/images/lakyn_art/location.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:01:13] "[36mGET /static/images/lakyn_art/elorafahad.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:02:32] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:02:32] "[36mGET /static/CSS/style.css?q=1642037406 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:02:32] "[36mGET /static/JS/navbar_effects.js?q=1634001641 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:02:32] "[36mGET /static/JS/rsvp_effects.js?q=1642458333 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:02:32] "[36mGET /static/images/lakyn_art/rsvp.png HTTP/1.1[0m" 304 -
+INFO:root:ImmutableMultiDict([('vac', 'yes'), ('reason-ta', ''), ('fname', 'ta'), ('lname', 'ta'), ('num_others', '3'), ('other-names', ''), ('email', 'tarobbani@gmail.com'), ('phone', '2222222222'), ('mehndi-choice', 'yes'), ('recep-choice', 'yes'), ('fast-food', ''), ('comments', '')])
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:03:54] "[32mPOST /rsvp-form HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:03:54] "GET /duplicate_email HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:03:54] "[36mGET /static/CSS/style.css?q=1642037406 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:03:58] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:03:58] "[36mGET /static/CSS/style.css?q=1642037406 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:03:58] "[36mGET /static/JS/navbar_effects.js?q=1634001641 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:03:58] "[36mGET /static/images/lakyn_art/title.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:03:58] "[36mGET /static/images/lakyn_art/location.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:03:58] "[36mGET /static/images/lakyn_art/date.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:03:58] "[36mGET /static/images/lakyn_art/elorafahad.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:03:59] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:03:59] "[36mGET /static/CSS/style.css?q=1642037406 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:04:00] "GET /static/JS/rsvp_effects.js?q=1642896215 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:04:00] "[36mGET /static/JS/navbar_effects.js?q=1634001641 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:04:00] "[36mGET /static/images/lakyn_art/rsvp.png HTTP/1.1[0m" 304 -
+INFO:root:ImmutableMultiDict([('vac', 'yes'), ('reason-ta', ''), ('fname', 'tahseen'), ('lname', 'robbani'), ('num_others', '2'), ('other-names', ''), ('email', 'tarobbani@gm'), ('phone', '2222222222'), ('mehndi-choice', 'yes'), ('recep-choice', 'yes'), ('fast-food', ''), ('comments', '')])
+INFO:root:ImmutableMultiDict([('vac', 'yes'), ('reason-ta', ''), ('fname', 'tahseen'), ('lname', 'robbani'), ('num_others', '2'), ('other-names', ''), ('email', 'tarobbani@gm'), ('phone', '2222222222'), ('mehndi-choice', 'yes'), ('recep-choice', 'yes'), ('fast-food', ''), ('comments', '')])
+INFO:root:here is the letter:A and value:yes
+INFO:root:ImmutableMultiDict([('vac', 'yes'), ('reason-ta', ''), ('fname', 'tahseen'), ('lname', 'robbani'), ('num_others', '2'), ('other-names', ''), ('email', 'tarobbani@gm'), ('phone', '2222222222'), ('mehndi-choice', 'yes'), ('recep-choice', 'yes'), ('fast-food', ''), ('comments', '')])
+INFO:root:here is the letter:B and value:
+INFO:root:here is the letter:A and value:yes
+INFO:root:here is the letter:C and value:tahseen
+INFO:root:here is the letter:B and value:
+INFO:root:here is the letter:D and value:robbani
+INFO:root:here is the letter:C and value:tahseen
+INFO:root:ImmutableMultiDict([('vac', 'yes'), ('reason-ta', ''), ('fname', 'tahseen'), ('lname', 'robbani'), ('num_others', '2'), ('other-names', ''), ('email', 'tarobbani@gm'), ('phone', '2222222222'), ('mehndi-choice', 'yes'), ('recep-choice', 'yes'), ('fast-food', ''), ('comments', '')])
+INFO:root:here is the letter:A and value:yes
+INFO:root:here is the letter:F and value:
+INFO:root:here is the letter:D and value:robbani
+INFO:root:here is the letter:G and value:tarobbani@gm
+INFO:root:here is the letter:B and value:
+INFO:root:here is the letter:H and value:2222222222
+INFO:root:here is the letter:I and value:yes
+INFO:root:here is the letter:C and value:tahseen
+INFO:root:here is the letter:J and value:yes
+INFO:root:here is the letter:F and value:
+INFO:root:here is the letter:A and value:yes
+INFO:root:here is the letter:K and value:
+INFO:root:here is the letter:D and value:robbani
+INFO:root:here is the letter:G and value:tarobbani@gm
+INFO:root:here is the letter:L and value:
+INFO:root:here is the letter:B and value:
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:04:24] "[32mPOST /rsvp-form HTTP/1.1[0m" 302 -
+INFO:root:here is the letter:H and value:2222222222
+INFO:root:here is the letter:C and value:tahseen
+INFO:root:here is the letter:F and value:
+INFO:root:here is the letter:I and value:yes
+INFO:root:here is the letter:G and value:tarobbani@gm
+INFO:root:here is the letter:D and value:robbani
+INFO:root:here is the letter:J and value:yes
+INFO:root:here is the letter:H and value:2222222222
+INFO:root:here is the letter:K and value:
+INFO:root:here is the letter:I and value:yes
+INFO:root:here is the letter:L and value:
+INFO:root:here is the letter:F and value:
+INFO:root:here is the letter:J and value:yes
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:04:25] "[32mPOST /rsvp-form HTTP/1.1[0m" 302 -
+INFO:root:here is the letter:G and value:tarobbani@gm
+INFO:root:here is the letter:K and value:
+INFO:root:here is the letter:H and value:2222222222
+INFO:root:here is the letter:L and value:
+INFO:root:here is the letter:I and value:yes
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:04:26] "[32mPOST /rsvp-form HTTP/1.1[0m" 302 -
+INFO:root:here is the letter:J and value:yes
+INFO:root:here is the letter:K and value:
+INFO:root:here is the letter:L and value:
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:04:26] "[32mPOST /rsvp-form HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:04:27] "GET /success HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:04:27] "[36mGET /static/CSS/style.css?q=1642037406 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:04:42] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:04:43] "[36mGET /static/CSS/style.css?q=1642037406 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:04:43] "[36mGET /static/JS/navbar_effects.js?q=1634001641 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:04:43] "[36mGET /static/images/lakyn_art/location.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:04:43] "[36mGET /static/images/lakyn_art/date.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:04:43] "[36mGET /static/images/lakyn_art/elorafahad.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:04:43] "[36mGET /static/images/lakyn_art/title.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:04:50] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:04:50] "[36mGET /static/CSS/style.css?q=1642037406 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:04:51] "[36mGET /static/JS/navbar_effects.js?q=1634001641 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:04:51] "[36mGET /static/images/lakyn_art/rsvp.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:04:51] "[36mGET /static/JS/rsvp_effects.js?q=1642896215 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:05:23] "[36mGET /static/CSS/style.css?q=1642037406 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:05:32] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:05:32] "[36mGET /static/CSS/style.css?q=1642037406 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:05:32] "[36mGET /static/JS/navbar_effects.js?q=1634001641 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:05:32] "[36mGET /static/images/lakyn_art/rsvp.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:05:32] "GET /static/JS/rsvp_effects.js?q=1642896320 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:05:33] "[36mGET /static/images/lakyn_art/rings.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:06:34] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:06:34] "[36mGET /static/CSS/style.css?q=1642037406 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:06:34] "[36mGET /static/JS/navbar_effects.js?q=1634001641 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:06:34] "GET /static/JS/rsvp_effects.js?q=1642896391 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:06:34] "[36mGET /static/images/lakyn_art/rsvp.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:06:35] "[36mGET /static/images/lakyn_art/rings.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:07:01] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:07:01] "[36mGET /static/CSS/style.css?q=1642037406 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:07:01] "[36mGET /static/JS/navbar_effects.js?q=1634001641 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:07:01] "GET /static/JS/rsvp_effects.js?q=1642896419 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:07:01] "[36mGET /static/images/lakyn_art/rsvp.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:07:02] "[36mGET /static/images/lakyn_art/rings.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:07:11] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:07:11] "[36mGET /static/CSS/style.css?q=1642037406 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:07:11] "[36mGET /static/JS/navbar_effects.js?q=1634001641 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:07:11] "GET /static/JS/rsvp_effects.js?q=1642896430 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:07:11] "[36mGET /static/images/lakyn_art/rsvp.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:07:12] "[36mGET /static/images/lakyn_art/rings.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:09:52] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:09:52] "[36mGET /static/CSS/style.css?q=1642037406 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:09:52] "[36mGET /static/JS/navbar_effects.js?q=1634001641 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:09:52] "GET /static/JS/rsvp_effects.js?q=1642896580 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:09:52] "[36mGET /static/images/lakyn_art/rsvp.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:09:53] "[36mGET /static/images/lakyn_art/rings.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:10:13] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:10:14] "[36mGET /static/CSS/style.css?q=1642037406 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:10:14] "[36mGET /static/JS/navbar_effects.js?q=1634001641 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:10:14] "[36mGET /static/JS/rsvp_effects.js?q=1642896580 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:10:14] "[36mGET /static/images/lakyn_art/rsvp.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:10:14] "[36mGET /static/images/lakyn_art/rings.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:11:06] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:11:06] "[36mGET /static/CSS/style.css?q=1642037406 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:11:06] "[36mGET /static/JS/navbar_effects.js?q=1634001641 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:11:06] "GET /static/JS/rsvp_effects.js?q=1642896666 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:11:06] "[36mGET /static/images/lakyn_art/rsvp.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:11:07] "[36mGET /static/images/lakyn_art/rings.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:11:36] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:11:36] "[36mGET /static/CSS/style.css?q=1642037406 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:11:36] "[36mGET /static/JS/navbar_effects.js?q=1634001641 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:11:36] "[36mGET /static/images/lakyn_art/rsvp.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:11:36] "GET /static/JS/rsvp_effects.js?q=1642896689 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:11:37] "[36mGET /static/images/lakyn_art/rings.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:11:57] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:11:57] "[36mGET /static/CSS/style.css?q=1642037406 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:11:58] "[36mGET /static/JS/navbar_effects.js?q=1634001641 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:11:58] "[36mGET /static/JS/rsvp_effects.js?q=1642896689 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:11:58] "[36mGET /static/images/lakyn_art/rsvp.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:11:58] "[36mGET /static/images/lakyn_art/rings.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:13:04] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:13:05] "[36mGET /static/CSS/style.css?q=1642037406 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:13:05] "[36mGET /static/JS/navbar_effects.js?q=1634001641 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:13:05] "GET /static/JS/rsvp_effects.js?q=1642896783 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:13:05] "[36mGET /static/images/lakyn_art/rsvp.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:13:05] "[36mGET /static/images/lakyn_art/rings.png HTTP/1.1[0m" 304 -
+INFO:root:ImmutableMultiDict([('vac', 'yes'), ('reason-ta', ''), ('fname', 'f'), ('lname', 'f'), ('num_others', '2'), ('other-names', ''), ('email', 'feawf@gm'), ('phone', '2222222222'), ('mehndi-choice', 'yes'), ('recep-choice', 'yes'), ('fast-food', ''), ('comments', '')])
+INFO:root:here is the letter:A and value:yes
+INFO:root:here is the letter:B and value:
+INFO:root:here is the letter:C and value:f
+INFO:root:here is the letter:D and value:f
+INFO:root:here is the letter:F and value:
+INFO:root:here is the letter:G and value:feawf@gm
+INFO:root:here is the letter:H and value:2222222222
+INFO:root:here is the letter:I and value:yes
+INFO:root:here is the letter:J and value:yes
+INFO:root:here is the letter:K and value:
+INFO:root:here is the letter:L and value:
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:13:46] "[32mPOST /rsvp-form HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:13:46] "GET /success HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:13:47] "[36mGET /static/CSS/style.css?q=1642037406 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:14:01] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:14:02] "[36mGET /static/CSS/style.css?q=1642037406 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:14:02] "[36mGET /static/JS/navbar_effects.js?q=1634001641 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:14:02] "[36mGET /static/images/lakyn_art/title.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:14:02] "[36mGET /static/images/lakyn_art/location.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:14:02] "[36mGET /static/images/lakyn_art/date.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:14:02] "[36mGET /static/images/lakyn_art/elorafahad.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:14:03] "GET /rsvp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:14:03] "[36mGET /static/CSS/style.css?q=1642037406 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:14:03] "[36mGET /static/JS/navbar_effects.js?q=1634001641 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:14:04] "[36mGET /static/JS/rsvp_effects.js?q=1642896783 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:14:04] "[36mGET /static/images/lakyn_art/rsvp.png HTTP/1.1[0m" 304 -
+INFO:root:ImmutableMultiDict([('vac', 'yes'), ('reason-ta', ''), ('fname', 'f'), ('lname', 'f'), ('num_others', '3'), ('other-names', ''), ('email', 'tararar@d'), ('phone', '3333333333'), ('mehndi-choice', 'yes'), ('recep-choice', 'yes'), ('fast-food', ''), ('comments', '')])
+INFO:root:here is the letter:A and value:yes
+INFO:root:here is the letter:B and value:
+INFO:root:here is the letter:C and value:f
+INFO:root:here is the letter:D and value:f
+INFO:root:here is the letter:F and value:
+INFO:root:here is the letter:G and value:tararar@d
+INFO:root:here is the letter:H and value:3333333333
+INFO:root:here is the letter:I and value:yes
+INFO:root:here is the letter:J and value:yes
+INFO:root:here is the letter:K and value:
+INFO:root:here is the letter:L and value:
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:14:23] "[32mPOST /rsvp-form HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:14:23] "GET /success HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:14:23] "[36mGET /static/CSS/style.css?q=1642037406 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:14:26] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:14:26] "[36mGET /static/CSS/style.css?q=1642037406 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:14:26] "[36mGET /static/JS/navbar_effects.js?q=1634001641 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:14:26] "[36mGET /static/images/lakyn_art/title.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:14:27] "[36mGET /static/images/lakyn_art/location.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:14:27] "[36mGET /static/images/lakyn_art/elorafahad.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Jan/2022 18:14:27] "[36mGET /static/images/lakyn_art/date.png HTTP/1.1[0m" 304 -
