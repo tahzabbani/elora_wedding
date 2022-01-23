@@ -21,7 +21,7 @@ $('#btnFetch').click(function() {
     var btn = $(this);
     setTimeout(function() {
         btn.prop('disabled', true);
-    }, 70);
+    }, 50);
     setTimeout(function() {
         btn.prop('disabled', false);
     }, fewSeconds * 1000);
