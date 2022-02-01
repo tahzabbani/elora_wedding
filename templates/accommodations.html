@@ -47,13 +47,31 @@
                 <img class="img-fluid acc-pic mt-5" src="../static/images/lakyn_art/acc.png">
             </div>
         </div>
-        <div class="row py-5 white-back">
-            <div class="col-sm text-center">
-                <h2 class="content-margins">A link to book under our guest block at the Westin Buckhead coming soon!
+        <div class="row py-5 justify-content-center white-back">
+            <div class="col-md-6 text-center">
+                <h2 class="content-margins">If you would like to stay at the Westin Buckhead on the nights of the Mehndi and Reception, please use the button below to book within our guest block
                 </h2>
-                <h3 class="content-margins">If you are planning to book an Airbnb or a VRBO, here are some of the neighborhoods we recommend:</h2>
-                    <h4 class="airbnb-list">Buckhead<br>Midtown<br>Virginia Highlands</h2>
-                        <h3 class="pt-4">Generally, the best areas to stay in will be north of I-20 and east of I-75/I-85!</h3>
+                <a href="https://book.passkey.com/event/50288721/owner/8650452/home" target="_blank"><input type="button" class="btn sbmt-btn book-btn" value="Book now!"></a>
+            </div>
+        </div>
+        <form class="white-back" id="bookin-form" action="/book-form" method="POST">
+            <div class="row py-5 justify-content-center white-back">
+                <div class="col-md-6 text-center">
+                    <h2>If you have trouble booking or have any questions, please let us know here (please include your name and email/phone):</h2>
+                    <textarea class="form-control" id="comments" name="comments" style="height: 200px;" required></textarea>
+                </div>
+            </div>
+            <div class="row justify-content-center white-back">
+                <div class="col-md-6 text-center">
+                    <input type="submit" id="booking-btn" class="btn bookq-btn" value="Send &#8594;">
+                </div>
+            </div>
+        </form>
+        <div class="row py-5 justify-content-center white-back">
+            <div class="col-md-6 text-center">
+                <h3 class="content-margins">If you are planning to book an Airbnb or a VRBO, here are some of the neighborhoods we recommend:</h3>
+                <h4 class="airbnb-list">Buckhead<br>Midtown<br>Virginia Highlands</h4>
+                <h3 class="pt-4">Generally, the best areas to stay in will be north of I-20 and east of I-75/I-85!</h3>
 
             </div>
         </div>

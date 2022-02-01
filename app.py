@@ -91,6 +91,22 @@ def send_email(email, req):
     response = sg.client.mail.send.post(request_body=mail_json)
     print(response.status_code)
     print(response.headers)
+
+def send_booking_email(email, content):
+    sg = sendgrid.SendGridAPIClient(api_key=config.sendgridkey)
+    from_email = Email("noreply@fahadandelora.com")
+    to_email = To(email)
+    subject = "oh boy oh boy a comment"
+    content = Content("text/plain", content)
+    mail = Mail(from_email, to_email, subject, content)
+
+    # Get a JSON-ready representation of the Mail object
+    mail_json = mail.get()
+
+    # Send an HTTP POST request to /mail/send
+    response = sg.client.mail.send.post(request_body=mail_json)
+    print(response.status_code)
+    print(response.headers)
     
 
 @app.route('/rsvp-form', methods=["POST"])
@@ -109,9 +125,21 @@ def form():
             return redirect('/failure')
     return "yay"
 
+@app.route('/book-form', methods=["POST"])
+def book_form():
+    if request.method == "POST":
+        req = request.form
+        logging.info(req)
+        send_booking_email("ejrobbani@gmail.com", req['comments'])
+    return redirect('/book_success')
+
 @app.route('/')
 def entry():
     return redirect('/home')
+
+@app.route('/book_success')
+def book_success():
+    return render_template('book_success.html')
 
 @app.route('/conf_fail')
 def conf_fail():

@@ -63,21 +63,12 @@ body {
 }
 
 .white-back {
-    /* background-color: rgba(53, 104, 70, 0.685); */
     background-color: #faefec;
     position: relative;
-    /* height: 100vh; */
-}
-
-.container-fluid {
-    /* padding-left: 0px; */
-    /*padding-right: 0px; */
 }
 
 .sizing {
     background-color: #eec7be;
-    /* background-color: rgba(53, 104, 70, 0.685); */
-    /* text-align: center; */
     height: 85%;
     position: relative;
 }
@@ -102,8 +93,21 @@ body {
 
 /* accommodations */
 
-.airbnb-list {
-    /* color: #a7535d; */
+.book-btn {
+    background-color: #eec7be;
+}
+
+.bookq-btn {
+    background-color: lightgreen;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    font-size: 19px;
+    height: 50px;
+    width: 100px;
+}
+
+.bookq-btn:hover {
+    transform: scale(1.1);
 }
 
 .hotel-info {
