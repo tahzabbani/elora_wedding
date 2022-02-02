@@ -8262,3 +8262,19 @@ INFO:werkzeug:127.0.0.1 - - [31/Jan/2022 19:15:02] "[36mGET /static/CSS/style.c
 INFO:werkzeug:127.0.0.1 - - [31/Jan/2022 19:15:02] "[36mGET /static/JS/navbar_effects.js?q=1634001641 HTTP/1.1[0m" 304 -
 INFO:werkzeug:127.0.0.1 - - [31/Jan/2022 19:15:02] "[36mGET /static/images/lakyn_art/acc.png HTTP/1.1[0m" 304 -
 INFO:werkzeug:127.0.0.1 - - [31/Jan/2022 19:15:03] "[36mGET /static/images/lakyn_art/rings.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [02/Feb/2022 00:39:46] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [02/Feb/2022 00:39:46] "GET /home HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Feb/2022 00:39:46] "GET /static/images/lakyn_art/title.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Feb/2022 00:39:46] "GET /static/images/lakyn_art/date.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Feb/2022 00:39:46] "GET /static/images/lakyn_art/location.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Feb/2022 00:39:46] "GET /static/images/lakyn_art/elorafahad.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Feb/2022 00:39:46] "[36mGET /static/CSS/style.css?q=1643676828 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Feb/2022 00:39:46] "[36mGET /static/JS/navbar_effects.js?q=1634001641 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Feb/2022 00:39:48] "GET /faq HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Feb/2022 00:39:48] "[36mGET /static/CSS/style.css?q=1643676828 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Feb/2022 00:39:48] "[36mGET /static/JS/navbar_effects.js?q=1634001641 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Feb/2022 00:40:28] "GET /faq HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [02/Feb/2022 00:40:28] "[36mGET /static/CSS/style.css?q=1643676828 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Feb/2022 00:40:28] "[36mGET /static/JS/navbar_effects.js?q=1634001641 HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [02/Feb/2022 00:40:29] "[36mGET /static/images/lakyn_art/rings.png HTTP/1.1[0m" 304 -
