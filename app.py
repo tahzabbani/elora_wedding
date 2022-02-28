@@ -157,6 +157,10 @@ def failure():
 def success():
     return render_template('success.html')
 
+@app.route('/parking')
+def parking():
+    return render_template('parking.html')
+
 @app.route('/home')
 def home():
     return render_template('home.html')
